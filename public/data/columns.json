@@ -1,0 +1,67 @@
+[
+  {
+    "group": "",
+    "items": [
+      {
+        "name": "eng",
+        "label": "english",
+        "description": "",
+        "isDisabled": true,
+        "isChecked": true
+      }
+    ]
+  },
+  {
+    "group": "informal",
+    "items": [
+      {
+        "name": "inf-kanji",
+        "label": "kanji",
+        "description": "",
+        "isChecked": "true"
+      },
+      {
+        "name": "inf-dict",
+        "label": "dictionary",
+        "description": "",
+        "isChecked": "true"
+      },
+      {
+        "name": "inf-neg",
+        "label": "negative",
+        "description": "",
+        "isChecked": "true"
+      },
+      {
+        "name": "inf-neg-past",
+        "group": "informal",
+        "label": "negative past",
+        "description": "",
+        "isChecked": "true"
+      }
+    ]
+  },
+  {
+    "group": "formal",
+    "items": [
+      {
+        "name": "form-masu",
+        "label": "masu",
+        "description": "~masu",
+        "isChecked": "true"
+      },
+      {
+        "name": "form-neg",
+        "label": "negative",
+        "description": "",
+        "isChecked": "true"
+      },
+      {
+        "name": "form-neg-past",
+        "label": "negative past",
+        "description": "",
+        "isChecked": "true"
+      }
+    ]
+  }
+]
