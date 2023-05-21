@@ -1,0 +1,194 @@
+$size: 3rem;
+$large-radius: calc($size / 2);
+$small-radius: calc($size / 8);
+
+// $info-color: hsl(210, 0%, 30%);
+// $info-backcolor: hsl(210, 100%, 99%);
+// $main-color: hsl(210, 0%, 30%);
+// $main-backcolor: hsl(210, 100%, 100%);
+// $main-bordercolor: hsl(210, 100%, 98%);
+// $hover-backcolor: hsl(210, 100%, 97%);
+
+$info-color: hsl(210, 100%, 95%);
+$info-backcolor: hsl(210, 100%, 20%);
+$main-color: hsl(210, 100%, 10%);
+$main-backcolor: hsl(210, 100%, 98%);
+$main-bordercolor: hsl(210, 100%, 98%);
+$hover-backcolor: hsl(210, 100%, 95%);
+
+$transition: 0.1s ease;
+
+.wrapper {
+    position: relative;
+    min-width: $size;
+    padding: 0.25rem;
+
+    &_right {
+        .options {
+            right: 0;
+
+            &_visible {
+                border-radius: $small-radius $large-radius $large-radius $small-radius;
+            }
+
+            &_listVisible {
+                border-radius: 0 $large-radius $large-radius $small-radius;
+            }
+        }
+
+        .info {
+            right: 0;
+            left: auto;
+        }
+
+        .list {
+            left: -1px;
+            right: auto;
+        }
+
+        .cancelButton {
+            border-radius: $small-radius $large-radius $large-radius $small-radius;
+            padding-right: 25%;
+            margin-left: 0;
+            padding-left: 0;
+        }
+    }
+}
+
+.options {
+    display: none;
+    width: calc($size * 2);
+    height: calc($size - 0.25rem);
+    background: $main-backcolor;
+    border: 0;
+    border-radius: $large-radius;
+    transform: translateY(0.5rem) scaleX(0);
+    transform-origin: calc($size + ($size / 2));
+    transition: $transition;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+
+    &_visible {
+        display: block;
+        transform: translateY(-0.25rem) scaleX(1);
+        border-radius: $large-radius $small-radius $small-radius $large-radius;
+
+        .cancelButton {
+            display: block;
+        }
+    }
+
+    &_listVisible {
+        border-radius: $large-radius 0 $small-radius $large-radius;
+
+        .list {
+            display: block;
+            transform: scaleY(1);
+        }
+
+        .cancelButton {
+            border-radius: 0 0 0 $small-radius;
+        }
+    }
+}
+
+.list {
+    position: absolute;
+    right: 0;
+    bottom: calc($size - 0.25rem);
+    min-width: $size;
+    width: calc(100% - 1rem);
+    margin: 0;
+    padding: 0;
+    background: $main-backcolor;
+    border: 0;
+    border-radius: $small-radius $small-radius 0 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: $transition;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+}
+
+.listItem {
+    list-style: none;
+
+    &:first-child .itemButton {
+        border-radius: $small-radius $small-radius 0;
+    }
+
+}
+
+.itemButton {
+    width: 100%;
+    height: 100%;
+    padding: 0.75rem 0.5rem;
+    border: 0;
+    background: transparent;
+    color: $main-color;
+    font-size: 1rem;
+    cursor: pointer;
+
+    &:hover {
+        background: $hover-backcolor;
+        color: #000;
+    }
+
+    &_withImg {
+        padding-inline: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+
+        .itemText {
+            padding-left: 0.3rem;
+        }
+    }
+}
+
+.checkPlaceholder {
+    width: 1rem;
+    display: inline-block;
+}
+
+.cancelButton {
+    background: $main-backcolor;
+    border: 0;
+    border-radius: $large-radius $small-radius $small-radius $large-radius;
+    cursor: pointer;
+    width: 75%;
+    height: 100%;
+    margin-left: 25%;
+    padding-left: 25%;
+    color: $main-color;
+
+    &:hover {
+        background: $hover-backcolor;
+    }
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $size ;
+    height: $size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $info-backcolor;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    color: $info-color;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+    transition: 0.1s ease;
+
+    &:hover {
+        background: $hover-backcolor;
+        box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 4px;
+
+        img,
+        span {
+            filter: invert(1);
+        }
+    }
+}

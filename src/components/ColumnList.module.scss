@@ -1,0 +1,31 @@
+.wrapper {
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.listItem {
+    list-style: none;
+    padding-left: 1rem;
+
+    :hover {
+        background: aliceblue;
+    }
+
+    :hover li {
+        background: white;
+    }
+}
+
+.label {
+    display: block;
+    color: #333;
+    cursor: pointer;
+}
+
+
+.description {
+    color: #999;
+}
