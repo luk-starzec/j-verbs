@@ -6,15 +6,18 @@ import OptionsList from "./common/OptionsList";
 import { AppContext } from "../AppContext";
 
 export const VerbGroups = {
-  U_VERBS: 1,
-  RU_VERBS: 2,
-  IRREGULAR: 3,
+  U_VERBS: { id: 1, label: "U verbs", symbol: "u" },
+  RU_VERBS: { id: 2, label: "RU verbs", symbol: "ru" },
+  IRREGULAR: { id: 3, label: "Irregular", symbol: "irregular" },
 };
 
+export const getVerbGroups = () => Object.entries(VerbGroups).map(i => i[1])
+export const getVerbGroup = (verbGroupId) => Object.entries(VerbGroups).map(i => i[1]).filter(r => r.id === verbGroupId)[0]
+
 const verbGroupsList = [
-  { name: "U verbs", value: VerbGroups.U_VERBS },
-  { name: "RU verbs", value: VerbGroups.RU_VERBS },
-  { name: "Irregular", value: VerbGroups.IRREGULAR },
+  { name: VerbGroups.U_VERBS.label, value: VerbGroups.U_VERBS.id },
+  { name: VerbGroups.RU_VERBS.label, value: VerbGroups.RU_VERBS.id },
+  { name: VerbGroups.IRREGULAR.label, value: VerbGroups.IRREGULAR.id },
 ];
 
 const RowFilter = ({ isCollapsed }) => {

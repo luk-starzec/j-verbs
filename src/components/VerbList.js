@@ -3,7 +3,8 @@ import styles from "./VerbList.module.scss";
 import { AppContext } from "../AppContext";
 import { unique } from "../helpers/arrayHelper";
 import { KANA, ROMAJI } from "./TextFormatSettings";
-import { VerbGroups } from "./RowFilter";
+import { getVerbGroup } from "./RowFilter";
+import GroupsInfo from "./GroupsInfo";
 
 const VerbList = () => {
   const [headerItems, setHeaderItems] = useState({ topRow: [], bottomRow: [] });
@@ -143,24 +144,21 @@ const VerbList = () => {
   }, [context, visibleColumns]);
 
   useEffect(() => {
-    const selectedGroups = context.verbGroups.map(
-      (i) => Object.entries(VerbGroups).filter((f) => f[1] === i)[0][0]
-    );
-    //console.log(selectedGroups);
-    const filteredVerbs = context.verbs.filter((v) =>
-      selectedGroups.includes(v.group.toUpperCase())
-    );
-    //console.log(items);
+    const selectedGroups = context.verbGroups.map((i) => getVerbGroup(i).symbol)
+    const filteredVerbs = context.verbs.filter((v) => selectedGroups.includes(v.group))
     setVerbs(filteredVerbs);
   }, [context, context.verbs, context.verbsGroups]);
 
   return (
     <>
       {context && (
-        <table className={styles.table}>
-          {renderTableHeader(headerItems)}
-          {renderTableBody(verbs)}
-        </table>
+        <>
+          <table className={styles.table}>
+            {renderTableHeader(headerItems)}
+            {renderTableBody(verbs)}
+          </table>
+          <GroupsInfo />
+        </>
       )}
     </>
   );

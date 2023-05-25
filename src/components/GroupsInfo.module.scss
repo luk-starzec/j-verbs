@@ -1,0 +1,44 @@
+$border-color: #ccc;
+
+.wrapper {
+    margin: 0.75rem;
+    background: #fff;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.itemColor {
+    width: 2rem;
+    height: 1rem;
+    border: 1px solid $border-color;
+
+    &_u {
+        background: hsl(50, 90%, 98%);
+    }
+
+    &_ru {
+        background: hsl(100, 90%, 98%);
+    }
+
+    &_irregular {
+        background: hsl(240, 90%, 98%);
+    }
+
+    &_exceptionTag {
+        background: hsl(50, 90%, 90%);
+    }
+
+}

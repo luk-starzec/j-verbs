@@ -2,13 +2,6 @@ $size: 3rem;
 $large-radius: calc($size / 2);
 $small-radius: calc($size / 8);
 
-// $info-color: hsl(210, 0%, 30%);
-// $info-backcolor: hsl(210, 100%, 99%);
-// $main-color: hsl(210, 0%, 30%);
-// $main-backcolor: hsl(210, 100%, 100%);
-// $main-bordercolor: hsl(210, 100%, 98%);
-// $hover-backcolor: hsl(210, 100%, 97%);
-
 $info-color: hsl(210, 100%, 95%);
 $info-backcolor: hsl(210, 100%, 20%);
 $main-color: hsl(210, 100%, 10%);
@@ -21,7 +14,7 @@ $transition: 0.1s ease;
 .wrapper {
     position: relative;
     min-width: $size;
-    padding: 0.25rem;
+    padding-top: 0.25rem;
 
     &_right {
         .options {

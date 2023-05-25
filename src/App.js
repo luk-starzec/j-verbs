@@ -1,27 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { initAppContext } from './helpers/dataHelper';
 import { AppContext } from './AppContext';
 import VerbList from './components/VerbList';
-import ColumnSettings from './components/ColumnSettings';
-import RowFilter from './components/RowFilter';
-import TextFormatSettings from './components/TextFormatSettings';
 import SettingsList from './components/SettingsList';
+import CopyrightLabel from './components/CopyrighLabel';
 
 function App() {
   const [context, setContext] = useState();
 
   useEffect(() => {
     initAppContext(setContext);
-    //console.log(context);
   }, []);
 
   if (!context) return <div>loading...</div>;
 
   return (
-    <div className="App">
-      {/* <header className="App-header">
+    <AppContext.Provider value={context}>
+      <div className="App">
+        {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -35,12 +32,17 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <AppContext.Provider value={context}>
-        <VerbList />
-        <SettingsList />
-      </AppContext.Provider>
+        <main className='AppContent'>
+          <VerbList />
+          <SettingsList />
+        </main>
 
-    </div>
+        <footer className='AppFooter'>
+          <CopyrightLabel />
+        </footer>
+
+      </div>
+    </AppContext.Provider>
   );
 }
 

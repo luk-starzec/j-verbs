@@ -2,6 +2,8 @@ $backcolor: hsl(210, 100%, 20%);
 $backcolor2: hsl(210, 100%, 95%);
 
 .wrapper {
+    position: fixed;
+    bottom: 0.25rem;
     display: flex;
     margin-left: 0.25rem;
 
@@ -12,6 +14,7 @@ $backcolor2: hsl(210, 100%, 95%);
 
         .button {
             background: $backcolor2;
+            border: 2px solid $backcolor;
             transform: rotate(360deg);
 
             &:hover {
@@ -20,7 +23,7 @@ $backcolor2: hsl(210, 100%, 95%);
         }
 
         .icon {
-            filter: invert(0.9);
+            filter: saturate(15) brightness(0.3) hue-rotate(60deg);
         }
     }
 }

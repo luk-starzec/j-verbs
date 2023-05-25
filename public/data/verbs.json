@@ -1,6 +1,6 @@
 [
   {
-    "group": "u_verbs",
+    "group": "u",
     "tags": "",
     "columns": {
       "eng": "write",
@@ -32,7 +32,7 @@
     }
   },
   {
-    "group": "u_verbs",
+    "group": "u",
     "tags": "",
     "columns": {
       "eng": "work",
@@ -64,7 +64,7 @@
     }
   },
   {
-    "group": "u_verbs",
+    "group": "u",
     "tags": "exception",
     "columns": {
       "eng": "enter",
@@ -96,7 +96,7 @@
     }
   },
   {
-    "group": "ru_verbs",
+    "group": "ru",
     "tags": "",
     "columns": {
       "eng": "eat",

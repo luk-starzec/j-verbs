@@ -36,9 +36,9 @@ export const initAppContext = async (setContext) => {
   const columns = data[0];
   const verbs = await data[1];
   const verbGroups = [
-    VerbGroups.U_VERBS,
-    VerbGroups.RU_VERBS,
-    VerbGroups.IRREGULAR,
+    VerbGroups.U_VERBS.id,
+    VerbGroups.RU_VERBS.id,
+    VerbGroups.IRREGULAR.id,
   ];
   const textFormat = [KANA, ROMAJI];
 

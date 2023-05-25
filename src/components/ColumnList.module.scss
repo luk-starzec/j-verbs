@@ -1,5 +1,8 @@
-.wrapper {
-}
+$backcolor: hsl(210, 100%, 98%);
+$hover-backcolor: hsl(210, 100%, 95%);
+
+$color: #333;
+$color2: #666;
 
 .list {
     margin: 0;
@@ -10,22 +13,21 @@
     list-style: none;
     padding-left: 1rem;
 
-    :hover {
-        background: aliceblue;
-    }
+    .label:hover {
+        background: $hover-backcolor;
 
-    :hover li {
-        background: white;
+        .list {
+            background: $backcolor;
+        }
     }
 }
 
 .label {
     display: block;
-    color: #333;
+    color: $color;
     cursor: pointer;
 }
 
-
 .description {
-    color: #999;
+    color: $color2;
 }

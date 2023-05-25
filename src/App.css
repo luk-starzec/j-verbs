@@ -5,6 +5,23 @@
 .App {
   position: relative;
   min-height: 20rem;
+  height: 100vh;
+}
+
+.AppContent {
+  height: 100%;
+  padding-block: 1rem;
+}
+
+.AppFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: hsl(210, 30%, 20%);
+  z-index: -1;
 }
 
 /* .App {
