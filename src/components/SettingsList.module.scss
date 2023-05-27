@@ -1,11 +1,15 @@
+@import "../global";
+
 $backcolor: hsl(210, 100%, 20%);
 $backcolor2: hsl(210, 100%, 95%);
 
 .wrapper {
     position: fixed;
     bottom: 0.25rem;
-    display: flex;
     margin-left: 0.25rem;
+    display: flex;
+    z-index: 100;
+    animation: wrapper-slide-in 1s ease;
 
     &_visible {
         .optionsWrapper {
@@ -18,7 +22,7 @@ $backcolor2: hsl(210, 100%, 95%);
             transform: rotate(360deg);
 
             &:hover {
-                box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 4px;
+                box-shadow: $shadow-dark;
             }
         }
 
@@ -40,15 +44,17 @@ $backcolor2: hsl(210, 100%, 95%);
     position: absolute;
     width: 3rem;
     height: 3rem;
+    display: flex;
+    justify-content: center;
     border: 0;
     border-radius: 50%;
     background: $backcolor;
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+    box-shadow: $shadow-light;
     transition: 0.2s ease;
 
     &:hover {
-        box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 4px;
+        box-shadow: $shadow-dark;
         filter: brightness(1.3);
     }
 }
@@ -56,4 +62,18 @@ $backcolor2: hsl(210, 100%, 95%);
 .icon {
     width: 2rem;
     transition: 0.2s ease;
+}
+
+@keyframes wrapper-slide-in {
+    from {
+        transform: translateX(-10rem)
+    }
+
+    70% {
+        transform: translateX(-10rem)
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }

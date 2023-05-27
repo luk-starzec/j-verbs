@@ -1,8 +1,14 @@
-$border-color: #ccc;
+@import "../global";
+
+$border-color: $bordercolor-table;
 
 .wrapper {
+    position: relative;
     margin: 0.75rem;
     background: #fff;
+    transform-origin: top;
+    animation: wrapper-slide-in 1s ease;
+    z-index: 10;
 }
 
 .list {
@@ -26,19 +32,32 @@ $border-color: #ccc;
     border: 1px solid $border-color;
 
     &_u {
-        background: hsl(50, 90%, 98%);
+        background: $backcolor-verb-u;
     }
 
     &_ru {
-        background: hsl(100, 90%, 98%);
+        background: $backcolor-verb-ru;
     }
 
     &_irregular {
-        background: hsl(240, 90%, 98%);
+        background: $backcolor-verb-irregular;
     }
 
     &_exceptionTag {
-        background: hsl(50, 90%, 90%);
+        background: $backcolor-verb-u-exception;
+    }
+}
+
+@keyframes wrapper-slide-in {
+    from {
+        transform: translateY(-5rem)
     }
 
+    30% {
+        transform: translateY(-5rem)
+    }
+
+    to {
+        transform: translateY(0)
+    }
 }

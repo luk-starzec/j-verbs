@@ -3,6 +3,7 @@ import styles from "./ColumnList.module.scss";
 import { AppContext } from "../AppContext";
 import Checkbox, { CHECKED, INDETERMINATE, UNCHECKED } from "./common/Checkbox";
 import { unique } from "../helpers/arrayHelper";
+import { saveSettings } from "../helpers/dataHelper";
 
 const ColumnList = () => {
     const context = useContext(AppContext);
@@ -93,7 +94,10 @@ const ColumnList = () => {
             ...i,
             isChecked: i.name === itemName ? isChecked : i.isChecked,
         }));
-        context.setContext({ ...context, columns: result });
+
+        const ctx = { ...context, columns: result }
+        context.setContext(ctx);
+        saveSettings(ctx);
     };
 
     const setGroupIsChecked = (groupName, isChecked) => {

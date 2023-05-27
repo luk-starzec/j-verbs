@@ -1,10 +1,10 @@
 import React from 'react'
 
-const CopyrightLabel = () => {
+const CopyrightInfo = () => {
   const currentYear = new Date().getFullYear();
   return (
     <>© {currentYear}</>
   )
 }
 
-export default CopyrightLabel
+export default CopyrightInfo

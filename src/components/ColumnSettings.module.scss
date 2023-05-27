@@ -1,3 +1,5 @@
+@import "../global";
+
 $size: 3rem;
 $large-radius: calc($size / 2);
 $small-radius: calc($size / 8);
@@ -6,6 +8,7 @@ $small-radius: calc($size / 8);
 $color: hsl(210, 30%, 20%);
 $backcolor: hsl(210, 100%, 98%);
 $hover-backcolor: hsl(210, 100%, 95%);
+$button-backcolor: hsl(210, 100%, 20%);
 
 .wrapper {
   position: relative;
@@ -18,24 +21,24 @@ $hover-backcolor: hsl(210, 100%, 95%);
   top: 0;
   width: $size;
   height: $size;
-  background-color: $backcolor;
+  display: flex;
+  justify-content: center;
   border: 0;
   border-radius: 50%;
+  background: $button-backcolor;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+  box-shadow: $shadow-light;
   transition: 0.1s ease;
 
   &:hover {
     background-color: $hover-backcolor;
-    box-shadow: rgba(0, 0, 0, 0.25) 1px 1px 4px;
+    box-shadow: $shadow-light;
 
     img {
       filter: invert(1);
     }
-
   }
 
-  background: hsl(210, 100%, 20%);
 }
 
 .icon {
@@ -50,26 +53,31 @@ $hover-backcolor: hsl(210, 100%, 95%);
   background-color: $backcolor;
   border: 0;
   border-radius: $large-radius 0 $small-radius $large-radius;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+  box-shadow: $shadow-light;
   transform-origin: top right;
-  transform: scaleX(0);
+  transform: scaleY(0);
   transition: transform 0.1s ease;
 
   &_visible {
-    transform: scale(1);
+    transform: scaleY(1);
     display: block;
   }
 }
 
+
 .closeButtton {
-  width: calc(100% - $size * 0.25);
+  width: calc(100% - 1rem);
   height: 100%;
-  margin-left: calc($size * 0.25);
-  padding-left: 25%;
+  margin-left: 1rem;
+  padding-left: calc($size / 3 * 2);
   border: 0;
   background-color: $backcolor;
   color: $color;
   cursor: pointer;
+
+  img {
+    width: 0.75rem;
+  }
 
   &:hover {
     background-color: $hover-backcolor
@@ -86,6 +94,17 @@ $hover-backcolor: hsl(210, 100%, 95%);
   background: $backcolor;
   border: 0;
   border-radius: $small-radius $small-radius 0 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px;
+  box-shadow: $shadow-light;
+  transform-origin: bottom;
+  animation: show-list 0.1s ease;
+}
 
+@keyframes show-list {
+  from {
+    transform: scaleY(0);
+  }
+
+  to {
+    transform: scaleY(1);
+  }
 }

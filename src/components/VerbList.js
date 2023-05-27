@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useMemo, useState } from "react";
 import styles from "./VerbList.module.scss";
 import { AppContext } from "../AppContext";
 import { unique } from "../helpers/arrayHelper";
-import { KANA, ROMAJI } from "./TextFormatSettings";
-import { getVerbGroup } from "./RowFilter";
+import { KANA, ROMAJI } from "../helpers/textFormatHelper";
 import GroupsInfo from "./GroupsInfo";
+import { getVerbGroup } from "../helpers/verbGroupHelper";
 
 const VerbList = () => {
   const [headerItems, setHeaderItems] = useState({ topRow: [], bottomRow: [] });

@@ -3,20 +3,13 @@ import PropTypes from "prop-types";
 import styles from "./TextFormatSettings.module.scss";
 import OptionsList from "./common/OptionsList";
 import { AppContext } from "../AppContext";
+import { saveSettings } from "../helpers/dataHelper";
+import { TextFormats } from "../helpers/textFormatHelper";
 
-export const KANA = 1;
-export const ROMAJI = 2;
-
-const formats = [
-  { name: "あ", value: [KANA] },
-  { name: "a", value: [ROMAJI] },
-  { name: "あ/a", value: [KANA, ROMAJI] },
-];
-
-const items = formats.map((format) => format.name);
+const items = TextFormats.map((format) => format.name);
 
 const getItem = (textFormat) =>
-  formats.find((f) => f.value.toString() === textFormat.toString()).name;
+  TextFormats.find((f) => f.value.toString() === textFormat.toString()).name;
 
 const TextFormatSettings = ({ isCollapsed }) => {
   const context = useContext(AppContext);
@@ -24,8 +17,11 @@ const TextFormatSettings = ({ isCollapsed }) => {
 
   const onItemSelected = (item) => {
     setSelected(item);
-    const format = formats.find((f) => f.name === item);
-    context.setContext({ ...context, textFormat: format.value });
+    const format = TextFormats.find((f) => f.name === item);
+    const ctx = { ...context, textFormat: format.value }
+
+    context.setContext(ctx);
+    saveSettings(ctx);
   };
 
   return (

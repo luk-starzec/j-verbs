@@ -4,15 +4,8 @@ import styles from "./RowFilter.module.scss";
 import icon from "../assets/filter_icon.svg"
 import OptionsList from "./common/OptionsList";
 import { AppContext } from "../AppContext";
-
-export const VerbGroups = {
-  U_VERBS: { id: 1, label: "U verbs", symbol: "u" },
-  RU_VERBS: { id: 2, label: "RU verbs", symbol: "ru" },
-  IRREGULAR: { id: 3, label: "Irregular", symbol: "irregular" },
-};
-
-export const getVerbGroups = () => Object.entries(VerbGroups).map(i => i[1])
-export const getVerbGroup = (verbGroupId) => Object.entries(VerbGroups).map(i => i[1]).filter(r => r.id === verbGroupId)[0]
+import { VerbGroups } from "../helpers/verbGroupHelper";
+import { saveSettings } from "../helpers/dataHelper";
 
 const verbGroupsList = [
   { name: VerbGroups.U_VERBS.label, value: VerbGroups.U_VERBS.id },
@@ -34,16 +27,16 @@ const RowFilter = ({ isCollapsed }) => {
   }, [context, context?.verbGroups]);
 
   const onItemSelected = (item) => {
-    const selectedValue = verbGroupsList.find(
-      (f) => f.name === item.name
-    ).value;
+    const selectedValue = verbGroupsList.find(f => f.name === item.name).value;
 
     let selectedVerbGroups = context.verbGroups;
     item.isChecked
       ? selectedVerbGroups.splice(selectedVerbGroups.indexOf(selectedValue), 1)
       : selectedVerbGroups.push(selectedValue);
 
-    context.setContext({ ...context, verbGroups: selectedVerbGroups });
+    const ctx = { ...context, verbGroups: selectedVerbGroups }
+    context.setContext(ctx);
+    saveSettings(ctx);
   };
 
   return (
@@ -51,7 +44,7 @@ const RowFilter = ({ isCollapsed }) => {
       <OptionsList
         items={items}
         onItemSelected={onItemSelected}
-        title="Rows options"
+        title="Rows filter"
         optionsWrapperCss={styles.optionsWrapper}
         isCollapsed={isCollapsed}
       >

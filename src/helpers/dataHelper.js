@@ -1,17 +1,7 @@
-import { VerbGroups } from "../components/RowFilter";
-import { KANA, ROMAJI } from "../components/TextFormatSettings";
+import { DefaultTextFormatValue } from "./textFormatHelper";
+import { DefaultVerbGroupIds } from "./verbGroupHelper";
 
-const getData = (url) => {
-  fetch(url)
-    .then((response) => response.json())
-    .catch((e) => {
-      console.log(e.message);
-    });
-};
-
-export const getVerbsData = () => getData("./data/verbs.json");
-
-export const getColumnsData = () => getData("./data/columns.json");
+const SETTINGS_STORAGE_KEY = "settings"
 
 const fetchVerbs = async () => {
   const urlVerbs = "./data/verbs.json";
@@ -35,42 +25,34 @@ export const initAppContext = async (setContext) => {
 
   const columns = data[0];
   const verbs = await data[1];
-  const verbGroups = [
-    VerbGroups.U_VERBS.id,
-    VerbGroups.RU_VERBS.id,
-    VerbGroups.IRREGULAR.id,
-  ];
-  const textFormat = [KANA, ROMAJI];
+  const verbGroups = DefaultVerbGroupIds
+  const textFormat = DefaultTextFormatValue
+
+  const settings = getSettings();
 
   const ctx = {
-    columns: columns,
+    columns: settings?.columns ?? columns,
     verbs: verbs,
-    verbGroups: verbGroups,
-    textFormat: textFormat,
+    verbGroups: settings?.verbGroups ?? verbGroups,
+    textFormat: settings?.textFormat ?? textFormat,
     setContext: setContext,
   };
 
   setContext(ctx);
 };
 
-// import { useEffect, useState } from "react";
+export const saveSettings = (context) => {
+  const settings = {
+    columns: context.columns,
+    verbGroups: context.verbGroups,
+    textFormat: context.textFormat,
+  }
+  const value = JSON.stringify(settings)
+  localStorage.setItem(SETTINGS_STORAGE_KEY, value)
+}
 
-// export const useFetch = (url) => {
-//   const [status, setStatus] = useState("idle");
-//   const [data, setData] = useState([]);
-
-//   useEffect(() => {
-//     if (!url) return;
-//     const fetchData = async () => {
-//       setStatus("fetching");
-//       const response = await fetch(url);
-//       const data = await response.json();
-//       setData(data);
-//       setStatus("fetched");
-//     };
-
-//     fetchData();
-//   }, [url]);
-
-//   return { status, data };
-// };
+const getSettings = () => {
+  const value = localStorage.getItem(SETTINGS_STORAGE_KEY)
+  const settings = JSON.parse(value)
+  return settings;
+}

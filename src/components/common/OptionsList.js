@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import PropTypes from "prop-types";
 import checkIcon from "../../assets/check_icon.svg"
+import closeIcon from "../../assets/close_icon.svg"
 import styles from "./OptionsList.module.scss";
 
 const OptionsList = (props) => {
@@ -86,8 +87,8 @@ const OptionsList = (props) => {
           {items && items.map((i) => renderItem(i))}
         </ul>
 
-        <button className={styles.cancelButton} onClick={handleHideOptions}>
-          <span>X</span>
+        <button className={styles.closeButton} onClick={handleHideOptions}>
+          <img src={closeIcon} alt="X" />
         </button>
 
       </div>

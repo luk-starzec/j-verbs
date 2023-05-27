@@ -1,24 +1,30 @@
 import React from 'react'
 import styles from "./GroupsInfo.module.scss"
-import { getVerbGroups } from './RowFilter'
+import { getVerbGroups } from '../helpers/verbGroupHelper';
 
-const verbGroups = getVerbGroups();
+const prepareItems = () => {
+  let items = getVerbGroups().map(i => ({ text: i.label, symbol: i.symbol }));
+  items.splice(1, 0, { text: "U verbs with iru/eru endings (exceptions)", symbol: "exceptionTag" })
+  return items
+}
+
+const items = prepareItems();
 
 const GroupsInfo = () => {
 
-  const renderItem = (verbGroup) => {
-    const colorCss = styles[`itemColor_${verbGroup.symbol}`]
+  const renderItem = (item) => {
+    const colorCss = styles[`itemColor_${item.symbol}`]
     return (
-      <li className={styles.item}>
-        <div className={styles.itemColor + " " + colorCss}></div>
-        <div className={styles.itemName}>{verbGroup.label}</div>
+      <li className={styles.item} key={item.symbol}>
+        <div className={`${styles.itemColor} ${colorCss}`}></div>
+        <div className={styles.itemName}>{item.text}</div>
       </li >)
   }
 
   return (
     <div className={styles.wrapper}>
       <ul className={styles.list}>
-        {verbGroups.map(i => renderItem(i))}
+        {items.map(i => renderItem(i))}
       </ul>
     </div>
   )
