@@ -43,34 +43,32 @@ const VerbList = () => {
   const renderTableBody = (items) => {
     var columns = visibleColumns.map((i) => i.name);
     return (
-      <tbody>{items.map((el, i) => renderRow(el, columns, `v_${i}`))}</tbody>
+      <tbody>
+        {items.map((el, i) => renderRow(el, columns, `v_${i}`))}
+      </tbody>
     );
   };
 
-  const isColumnVisible = (columns, columnName) =>
-    columns.find((r) => r === columnName) != null;
-
   const getRowCss = (item) => {
-    let rowCss = styles[`row${item.group}`];
+    let rowCss = styles[`row_${item.group}`];
 
     if (item.tags) {
       item.tags.split(";").forEach((tag) => {
-        rowCss = rowCss + " " + styles[`row${tag}Tag`];
+        rowCss = `${rowCss} ${styles[`row_${tag}Tag`]}`;
       });
     }
     return rowCss;
   };
 
   const prepareCells = (item, columns) => {
-    let cells = [];
-    for (let field in item.columns) {
-      if (!isColumnVisible(columns, field)) continue;
+    const cells = [];
 
-      const value = item.columns[field];
-      const cell =
-        typeof value === "string"
-          ? { kana: value, isKanaOnly: true }
-          : { kana: value.kana, romaji: value.romaji };
+    for (let column of columns) {
+      const value = item.columns[column]
+
+      const cell = typeof value === "string"
+        ? { kana: value, isKanaOnly: true }
+        : { kana: value?.kana, romaji: value?.romaji };
 
       cells.push(cell);
     }
@@ -128,14 +126,11 @@ const VerbList = () => {
     column.group == null || column.group === "";
 
   useEffect(() => {
-    if (!context) return;
+    if (!context)
+      return;
 
-    const emptyGroupColumns = visibleColumns.filter((r) =>
-      isEmptyGroupColumn(r)
-    );
-    const namedGroupColumns = visibleColumns.filter(
-      (r) => !isEmptyGroupColumn(r)
-    );
+    const emptyGroupColumns = visibleColumns.filter(r => isEmptyGroupColumn(r));
+    const namedGroupColumns = visibleColumns.filter(r => !isEmptyGroupColumn(r));
 
     setHeaderItems({
       topRow: prepareTopHeaderItems(emptyGroupColumns, namedGroupColumns),

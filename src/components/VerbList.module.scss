@@ -30,19 +30,19 @@
 
 .row {
 
-    &u {
+    &_u {
         background: $backcolor-verb-u;
     }
 
-    &ru {
+    &_ru {
         background: $backcolor-verb-ru;
     }
 
-    &irregular {
+    &_irregular {
         background: $backcolor-verb-irregular;
     }
 
-    &exceptionTag {
+    &_exceptionTag {
         background: $backcolor-verb-u-exception;
     }
 }

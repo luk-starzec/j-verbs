@@ -30,6 +30,9 @@ export const initAppContext = async (setContext) => {
 
   const settings = getSettings();
 
+  if (settings?.columns && columns.length !== settings?.columns?.length)
+    settings.columns = null
+
   const ctx = {
     columns: settings?.columns ?? columns,
     verbs: verbs,

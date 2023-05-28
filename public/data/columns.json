@@ -38,6 +38,20 @@
         "label": "negative past",
         "description": "",
         "isChecked": "true"
+      },
+      {
+        "name": "inf-te",
+        "group": "informal",
+        "label": "te form",
+        "description": "",
+        "isChecked": "true"
+      },
+      {
+        "name": "inf-ta",
+        "group": "informal",
+        "label": "ta form",
+        "description": "",
+        "isChecked": "true"
       }
     ]
   },

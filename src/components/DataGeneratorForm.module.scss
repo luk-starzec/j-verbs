@@ -1,0 +1,53 @@
+.wrapper {
+    display: grid;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: 48rem;
+    margin-inline: auto;
+    background: whitesmoke;
+    color: #333;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    label {
+        width: 10rem;
+        text-align: right;
+    }
+
+    .checkboxLabel {
+        width: auto;
+        text-align: left;
+
+    }
+
+    input,
+    textarea {
+        margin-left: 1rem;
+    }
+}
+
+.clearButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.result {
+    p {
+        position: relative;
+        margin: 0.25rem 0.5rem;
+        padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+        border: 1px solid #ccc;
+
+        .copyButton {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+}
