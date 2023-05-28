@@ -9,7 +9,7 @@ const INITIAL_STATE = {
     kanji: ""
 }
 
-const DataConverterForm = () => {
+const DataGeneratorForm = () => {
     const [form, setForm] = useState(INITIAL_STATE)
     const [result, setResult] = useState()
 
@@ -129,4 +129,4 @@ const DataConverterForm = () => {
         </form>)
 }
 
-export default DataConverterForm
+export default DataGeneratorForm

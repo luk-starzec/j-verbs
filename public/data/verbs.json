@@ -43,6 +43,46 @@
     "group": "u",
     "tags": "",
     "columns": {
+      "eng": "read",
+      "inf-kanji": "読む",
+      "inf-dict": {
+        "kana": "よむ",
+        "romaji": "yomu"
+      },
+      "inf-neg": {
+        "kana": "よまない",
+        "romaji": "yomanai"
+      },
+      "inf-neg-past": {
+        "kana": "よまなかった",
+        "romaji": "yomanakatta"
+      },
+      "inf-te": {
+        "kana": "よんで",
+        "romaji": "yonde"
+      },
+      "inf-ta": {
+        "kana": "よんだ",
+        "romaji": "yonda"
+      },
+      "form-masu": {
+        "kana": "よみます",
+        "romaji": "yomimasu"
+      },
+      "form-neg": {
+        "kana": "よみません",
+        "romaji": "yomimasen"
+      },
+      "form-neg-past": {
+        "kana": "よみませんでした",
+        "romaji": "yomimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
       "eng": "listen",
       "inf-kanji": "聞く",
       "inf-dict": {
@@ -83,6 +123,126 @@
     "group": "u",
     "tags": "",
     "columns": {
+      "eng": "speak",
+      "inf-kanji": "話す",
+      "inf-dict": {
+        "kana": "はなす",
+        "romaji": "hanasu"
+      },
+      "inf-neg": {
+        "kana": "はなさない",
+        "romaji": "hanasanai"
+      },
+      "inf-neg-past": {
+        "kana": "はなさなかった",
+        "romaji": "hanasanakatta"
+      },
+      "inf-te": {
+        "kana": "はなして",
+        "romaji": "hanashite"
+      },
+      "inf-ta": {
+        "kana": "はなした",
+        "romaji": "hanashita"
+      },
+      "form-masu": {
+        "kana": "はなします",
+        "romaji": "hanashimasu"
+      },
+      "form-neg": {
+        "kana": "はなしません",
+        "romaji": "hanashimasen"
+      },
+      "form-neg-past": {
+        "kana": "はなしませんでした",
+        "romaji": "hanashimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "drink",
+      "inf-kanji": "飲む",
+      "inf-dict": {
+        "kana": "のむ",
+        "romaji": "nomu"
+      },
+      "inf-neg": {
+        "kana": "のまない",
+        "romaji": "nomanai"
+      },
+      "inf-neg-past": {
+        "kana": "のまなかった",
+        "romaji": "nomanakatta"
+      },
+      "inf-te": {
+        "kana": "のんで",
+        "romaji": "nonde"
+      },
+      "inf-ta": {
+        "kana": "のんだ",
+        "romaji": "nonda"
+      },
+      "form-masu": {
+        "kana": "のみます",
+        "romaji": "nomimasu"
+      },
+      "form-neg": {
+        "kana": "のみません",
+        "romaji": "nomimasen"
+      },
+      "form-neg-past": {
+        "kana": "のみませんでした",
+        "romaji": "nomimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "buy",
+      "inf-kanji": "買う",
+      "inf-dict": {
+        "kana": "かう",
+        "romaji": "kau"
+      },
+      "inf-neg": {
+        "kana": "かわない",
+        "romaji": "kawanai"
+      },
+      "inf-neg-past": {
+        "kana": "かわなかった",
+        "romaji": "kawanakatta"
+      },
+      "inf-te": {
+        "kana": "かって",
+        "romaji": "katte"
+      },
+      "inf-ta": {
+        "kana": "かった",
+        "romaji": "katta"
+      },
+      "form-masu": {
+        "kana": "かいます",
+        "romaji": "kaimasu"
+      },
+      "form-neg": {
+        "kana": "かいません",
+        "romaji": "kaimasen"
+      },
+      "form-neg-past": {
+        "kana": "かいませんでした",
+        "romaji": "kaimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
       "eng": "work",
       "inf-kanji": "働く",
       "inf-dict": {
@@ -116,6 +276,46 @@
       "form-neg-past": {
         "kana": "はたらきませんでした",
         "romaji": "hatarakimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "play",
+      "inf-kanji": "遊ぶ",
+      "inf-dict": {
+        "kana": "あそぶ",
+        "romaji": "asobu"
+      },
+      "inf-neg": {
+        "kana": "あそばない",
+        "romaji": "asobanai"
+      },
+      "inf-neg-past": {
+        "kana": "あそばなかった",
+        "romaji": "asobanakatta"
+      },
+      "inf-te": {
+        "kana": "あそんで",
+        "romaji": "asonde"
+      },
+      "inf-ta": {
+        "kana": "あそんだ",
+        "romaji": "asonda"
+      },
+      "form-masu": {
+        "kana": "あそびます",
+        "romaji": "asobimasu"
+      },
+      "form-neg": {
+        "kana": "あそびません",
+        "romaji": "asobimasen"
+      },
+      "form-neg-past": {
+        "kana": "あそびませんでした",
+        "romaji": "asobimasendeshita"
       }
     }
   },
@@ -196,6 +396,86 @@
       "form-neg-past": {
         "kana": "いそぎませんでした",
         "romaji": "isogimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "wait",
+      "inf-kanji": "待つ",
+      "inf-dict": {
+        "kana": "まつ",
+        "romaji": "matsu"
+      },
+      "inf-neg": {
+        "kana": "またない",
+        "romaji": "matanai"
+      },
+      "inf-neg-past": {
+        "kana": "またなかった",
+        "romaji": "matanakatta"
+      },
+      "inf-te": {
+        "kana": "まって",
+        "romaji": "matte"
+      },
+      "inf-ta": {
+        "kana": "まった",
+        "romaji": "matta"
+      },
+      "form-masu": {
+        "kana": "まちます",
+        "romaji": "machimasu"
+      },
+      "form-neg": {
+        "kana": "まちません",
+        "romaji": "machimasen"
+      },
+      "form-neg-past": {
+        "kana": "まちませんでした",
+        "romaji": "machimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "understand",
+      "inf-kanji": "分かる",
+      "inf-dict": {
+        "kana": "わかる",
+        "romaji": "wakaru"
+      },
+      "inf-neg": {
+        "kana": "わからない",
+        "romaji": "wakaranai"
+      },
+      "inf-neg-past": {
+        "kana": "わからなかった",
+        "romaji": "wakaranakatta"
+      },
+      "inf-te": {
+        "kana": "わかって",
+        "romaji": "wakatte"
+      },
+      "inf-ta": {
+        "kana": "わかった",
+        "romaji": "wakatta"
+      },
+      "form-masu": {
+        "kana": "わかります",
+        "romaji": "wakarimasu"
+      },
+      "form-neg": {
+        "kana": "わかりません",
+        "romaji": "wakarimasen"
+      },
+      "form-neg-past": {
+        "kana": "わかりませんでした",
+        "romaji": "wakarimasendeshita"
       }
     }
   },
@@ -283,6 +563,46 @@
     "group": "u",
     "tags": "exception",
     "columns": {
+      "eng": "run",
+      "inf-kanji": "走る",
+      "inf-dict": {
+        "kana": "はしる",
+        "romaji": "hashiru"
+      },
+      "inf-neg": {
+        "kana": "はしない",
+        "romaji": "hashinai"
+      },
+      "inf-neg-past": {
+        "kana": "はしなかった",
+        "romaji": "hashinakatta"
+      },
+      "inf-te": {
+        "kana": "はしって",
+        "romaji": "hashitte"
+      },
+      "inf-ta": {
+        "kana": "はしった",
+        "romaji": "hashitta"
+      },
+      "form-masu": {
+        "kana": "はしります",
+        "romaji": "hashirimasu"
+      },
+      "form-neg": {
+        "kana": "はしりません",
+        "romaji": "hashirimasen"
+      },
+      "form-neg-past": {
+        "kana": "はしりませんでした",
+        "romaji": "hashirimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "exception",
+    "columns": {
       "eng": "go",
       "inf-kanji": "行く",
       "inf-dict": {
@@ -316,6 +636,206 @@
       "form-neg-past": {
         "kana": "いきませんでした",
         "romaji": "ikimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "exception",
+    "columns": {
+      "eng": "be",
+      "inf-kanji": "居る",
+      "inf-dict": {
+        "kana": "いる",
+        "romaji": "iru"
+      },
+      "inf-neg": {
+        "kana": "いない",
+        "romaji": "inai"
+      },
+      "inf-neg-past": {
+        "kana": "いなかった",
+        "romaji": "inakatta"
+      },
+      "inf-te": {
+        "kana": "いて",
+        "romaji": "ite"
+      },
+      "inf-ta": {
+        "kana": "いた",
+        "romaji": "ita"
+      },
+      "form-masu": {
+        "kana": "います",
+        "romaji": "imasu"
+      },
+      "form-neg": {
+        "kana": "いません",
+        "romaji": "imasen"
+      },
+      "form-neg-past": {
+        "kana": "いませんでした",
+        "romaji": "imasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "exception",
+    "columns": {
+      "eng": "exist/have",
+      "inf-kanji": "有る",
+      "inf-dict": {
+        "kana": "ある",
+        "romaji": "aru"
+      },
+      "inf-neg": {
+        "kana": "ない",
+        "romaji": "nai"
+      },
+      "inf-neg-past": {
+        "kana": "なかった",
+        "romaji": "nakatta"
+      },
+      "inf-te": {
+        "kana": "あって",
+        "romaji": "atte"
+      },
+      "inf-ta": {
+        "kana": "あった",
+        "romaji": "atta"
+      },
+      "form-masu": {
+        "kana": "あります",
+        "romaji": "arimasu"
+      },
+      "form-neg": {
+        "kana": "ありません",
+        "romaji": "arimasen"
+      },
+      "form-neg-past": {
+        "kana": "ありませんでした",
+        "romaji": "arimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "exception",
+    "columns": {
+      "eng": "limit",
+      "inf-kanji": "限る",
+      "inf-dict": {
+        "kana": "かぎる",
+        "romaji": "kagiru"
+      },
+      "inf-neg": {
+        "kana": "かぎない",
+        "romaji": "kaginai"
+      },
+      "inf-neg-past": {
+        "kana": "かぎなかった",
+        "romaji": "kaginakatta"
+      },
+      "inf-te": {
+        "kana": "かぎって",
+        "romaji": "kagitte"
+      },
+      "inf-ta": {
+        "kana": "かぎった",
+        "romaji": "kagitta"
+      },
+      "form-masu": {
+        "kana": "かぎます",
+        "romaji": "kagimasu"
+      },
+      "form-neg": {
+        "kana": "かぎません",
+        "romaji": "kagimasen"
+      },
+      "form-neg-past": {
+        "kana": "かぎませんでした",
+        "romaji": "kagimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "exception",
+    "columns": {
+      "eng": "cut",
+      "inf-kanji": "切る",
+      "inf-dict": {
+        "kana": "きる",
+        "romaji": "kiru"
+      },
+      "inf-neg": {
+        "kana": "きない",
+        "romaji": "kinai"
+      },
+      "inf-neg-past": {
+        "kana": "きなかった",
+        "romaji": "kinakatta"
+      },
+      "inf-te": {
+        "kana": "きって",
+        "romaji": "kitte"
+      },
+      "inf-ta": {
+        "kana": "きった",
+        "romaji": "kitta"
+      },
+      "form-masu": {
+        "kana": "きます",
+        "romaji": "kimasu"
+      },
+      "form-neg": {
+        "kana": "きません",
+        "romaji": "kimasen"
+      },
+      "form-neg-past": {
+        "kana": "きませんでした",
+        "romaji": "kimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "exception",
+    "columns": {
+      "eng": "chatter",
+      "inf-kanji": "喋る",
+      "inf-dict": {
+        "kana": "しゃべる",
+        "romaji": "shaberu"
+      },
+      "inf-neg": {
+        "kana": "しゃべない",
+        "romaji": "shabenai"
+      },
+      "inf-neg-past": {
+        "kana": "しゃべなかった",
+        "romaji": "shabenakatta"
+      },
+      "inf-te": {
+        "kana": "しゃべって",
+        "romaji": "shabette"
+      },
+      "inf-ta": {
+        "kana": "しゃべった",
+        "romaji": "shabetta"
+      },
+      "form-masu": {
+        "kana": "しゃべます",
+        "romaji": "shabemasu"
+      },
+      "form-neg": {
+        "kana": "しゃべません",
+        "romaji": "shabemasen"
+      },
+      "form-neg-past": {
+        "kana": "しゃべませんでした",
+        "romaji": "shabemasendeshita"
       }
     }
   },
@@ -436,6 +956,206 @@
       "form-neg-past": {
         "kana": "ねませんでした",
         "romaji": "nemasendeshita"
+      }
+    }
+  },
+  {
+    "group": "ru",
+    "tags": "",
+    "columns": {
+      "eng": "get up",
+      "inf-kanji": "起きる",
+      "inf-dict": {
+        "kana": "おきる",
+        "romaji": "okiru"
+      },
+      "inf-neg": {
+        "kana": "おきない",
+        "romaji": "okinai"
+      },
+      "inf-neg-past": {
+        "kana": "おきなかった",
+        "romaji": "okinakatta"
+      },
+      "inf-te": {
+        "kana": "おきて",
+        "romaji": "okite"
+      },
+      "inf-ta": {
+        "kana": "おきた",
+        "romaji": "okita"
+      },
+      "form-masu": {
+        "kana": "おきます",
+        "romaji": "okimasu"
+      },
+      "form-neg": {
+        "kana": "おきません",
+        "romaji": "okimasen"
+      },
+      "form-neg-past": {
+        "kana": "おきませんでした",
+        "romaji": "okimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "ru",
+    "tags": "",
+    "columns": {
+      "eng": "wear",
+      "inf-kanji": "着る",
+      "inf-dict": {
+        "kana": "きる",
+        "romaji": "kiru"
+      },
+      "inf-neg": {
+        "kana": "きない",
+        "romaji": "kinai"
+      },
+      "inf-neg-past": {
+        "kana": "きなかった",
+        "romaji": "kinakatta"
+      },
+      "inf-te": {
+        "kana": "きて",
+        "romaji": "kite"
+      },
+      "inf-ta": {
+        "kana": "きた",
+        "romaji": "kita"
+      },
+      "form-masu": {
+        "kana": "きます",
+        "romaji": "kimasu"
+      },
+      "form-neg": {
+        "kana": "きません",
+        "romaji": "kimasen"
+      },
+      "form-neg-past": {
+        "kana": "きませんでした",
+        "romaji": "kimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "ru",
+    "tags": "",
+    "columns": {
+      "eng": "open",
+      "inf-kanji": "開ける",
+      "inf-dict": {
+        "kana": "あける",
+        "romaji": "akeru"
+      },
+      "inf-neg": {
+        "kana": "あけない",
+        "romaji": "akenai"
+      },
+      "inf-neg-past": {
+        "kana": "あけなかった",
+        "romaji": "akenakatta"
+      },
+      "inf-te": {
+        "kana": "あけて",
+        "romaji": "akete"
+      },
+      "inf-ta": {
+        "kana": "あけた",
+        "romaji": "aketa"
+      },
+      "form-masu": {
+        "kana": "あけます",
+        "romaji": "akemasu"
+      },
+      "form-neg": {
+        "kana": "あけません",
+        "romaji": "akemasen"
+      },
+      "form-neg-past": {
+        "kana": "あけませんでした",
+        "romaji": "akemasendeshita"
+      }
+    }
+  },
+  {
+    "group": "ru",
+    "tags": "",
+    "columns": {
+      "eng": "give",
+      "inf-kanji": "",
+      "inf-dict": {
+        "kana": "あげる",
+        "romaji": "ageru"
+      },
+      "inf-neg": {
+        "kana": "あげない",
+        "romaji": "agenai"
+      },
+      "inf-neg-past": {
+        "kana": "あげなかった",
+        "romaji": "agenakatta"
+      },
+      "inf-te": {
+        "kana": "あげて",
+        "romaji": "agete"
+      },
+      "inf-ta": {
+        "kana": "あげた",
+        "romaji": "ageta"
+      },
+      "form-masu": {
+        "kana": "あげます",
+        "romaji": "agemasu"
+      },
+      "form-neg": {
+        "kana": "あげません",
+        "romaji": "agemasen"
+      },
+      "form-neg-past": {
+        "kana": "あげませんでした",
+        "romaji": "agemasendeshita"
+      }
+    }
+  },
+  {
+    "group": "ru",
+    "tags": "",
+    "columns": {
+      "eng": "go out",
+      "inf-kanji": "出る",
+      "inf-dict": {
+        "kana": "でる",
+        "romaji": "deru"
+      },
+      "inf-neg": {
+        "kana": "でない",
+        "romaji": "denai"
+      },
+      "inf-neg-past": {
+        "kana": "でなかった",
+        "romaji": "denakatta"
+      },
+      "inf-te": {
+        "kana": "でて",
+        "romaji": "dete"
+      },
+      "inf-ta": {
+        "kana": "でた",
+        "romaji": "deta"
+      },
+      "form-masu": {
+        "kana": "でます",
+        "romaji": "demasu"
+      },
+      "form-neg": {
+        "kana": "でません",
+        "romaji": "demasen"
+      },
+      "form-neg-past": {
+        "kana": "でませんでした",
+        "romaji": "demasendeshita"
       }
     }
   },
