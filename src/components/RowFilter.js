@@ -44,7 +44,7 @@ const RowFilter = ({ isCollapsed }) => {
       <OptionsList
         items={items}
         onItemSelected={onItemSelected}
-        title="Rows filter"
+        title="Row filter"
         optionsWrapperCss={styles.optionsWrapper}
         isCollapsed={isCollapsed}
       >

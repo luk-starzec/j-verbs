@@ -4,7 +4,8 @@ $border-color: $bordercolor-table;
 
 .wrapper {
     position: relative;
-    margin: 0.75rem;
+    margin: 0 1rem 2rem 1rem;
+    padding-top: 0.75rem;
     background: #fff;
     transform-origin: top;
     animation: wrapper-slide-in 1s ease;

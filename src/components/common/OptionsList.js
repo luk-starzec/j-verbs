@@ -87,7 +87,7 @@ const OptionsList = (props) => {
           {items && items.map((i) => renderItem(i))}
         </ul>
 
-        <button className={styles.closeButton} onClick={handleHideOptions}>
+        <button className={styles.closeButton} onClick={handleHideOptions} title="Close">
           <img src={closeIcon} alt="X" />
         </button>
 

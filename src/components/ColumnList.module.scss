@@ -1,7 +1,7 @@
 @import "../global";
 
-$backcolor: hsl(210, 100%, 98%);
-$hover-backcolor: hsl(210, 100%, 95%);
+$backcolor: $accent-color-lighter;
+$hover-backcolor: $accent-color-light;
 
 .list {
     margin: 0;

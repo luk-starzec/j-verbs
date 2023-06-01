@@ -1,7 +1,7 @@
 @import "../global";
 
-$backcolor: hsl(210, 100%, 20%);
-$backcolor2: hsl(210, 100%, 95%);
+$backcolor: $accent-color-dark;
+$backcolor2: $accent-color-light;
 
 .wrapper {
     position: fixed;

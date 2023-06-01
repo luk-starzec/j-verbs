@@ -481,6 +481,206 @@
   },
   {
     "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "wash",
+      "inf-kanji": "洗う",
+      "inf-dict": {
+        "kana": "わしゃらう",
+        "romaji": "arau"
+      },
+      "inf-neg": {
+        "kana": "あらわない",
+        "romaji": "arawanai"
+      },
+      "inf-neg-past": {
+        "kana": "あらわなかった",
+        "romaji": "arawanakatta"
+      },
+      "inf-te": {
+        "kana": "あらって",
+        "romaji": "aratte"
+      },
+      "inf-ta": {
+        "kana": "あらった",
+        "romaji": "aratta"
+      },
+      "form-masu": {
+        "kana": "あります",
+        "romaji": "arimasu"
+      },
+      "form-neg": {
+        "kana": "ありません",
+        "romaji": "arimasen"
+      },
+      "form-neg-past": {
+        "kana": "あらませんでした",
+        "romaji": "aramasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "stand up",
+      "inf-kanji": "立つ",
+      "inf-dict": {
+        "kana": "たつ",
+        "romaji": "tatsu"
+      },
+      "inf-neg": {
+        "kana": "たたない",
+        "romaji": "tatanai"
+      },
+      "inf-neg-past": {
+        "kana": "たたなかった",
+        "romaji": "tatanakatta"
+      },
+      "inf-te": {
+        "kana": "たって",
+        "romaji": "tatte"
+      },
+      "inf-ta": {
+        "kana": "たった",
+        "romaji": "tatta"
+      },
+      "form-masu": {
+        "kana": "たちます",
+        "romaji": "tachimasu"
+      },
+      "form-neg": {
+        "kana": "たちません",
+        "romaji": "tachimasen"
+      },
+      "form-neg-past": {
+        "kana": "たちませんでした",
+        "romaji": "tachimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "sit",
+      "inf-kanji": "座る",
+      "inf-dict": {
+        "kana": "すわる",
+        "romaji": "suwaru"
+      },
+      "inf-neg": {
+        "kana": "すわらない",
+        "romaji": "suwaranai"
+      },
+      "inf-neg-past": {
+        "kana": "すわらなかった",
+        "romaji": "suwaranakatta"
+      },
+      "inf-te": {
+        "kana": "すわって",
+        "romaji": "suwatte"
+      },
+      "inf-ta": {
+        "kana": "すわった",
+        "romaji": "suwatta"
+      },
+      "form-masu": {
+        "kana": "すわります",
+        "romaji": "suwarimasu"
+      },
+      "form-neg": {
+        "kana": "すわりません",
+        "romaji": "suwarimasen"
+      },
+      "form-neg-past": {
+        "kana": "すわりませんでした",
+        "romaji": "suwarimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "call",
+      "inf-kanji": "呼ぶ",
+      "inf-dict": {
+        "kana": "よぶ",
+        "romaji": "yobu"
+      },
+      "inf-neg": {
+        "kana": "よばない",
+        "romaji": "yobanai"
+      },
+      "inf-neg-past": {
+        "kana": "よばなかった",
+        "romaji": "yobanakatta"
+      },
+      "inf-te": {
+        "kana": "よんで",
+        "romaji": "yonde"
+      },
+      "inf-ta": {
+        "kana": "よんだ",
+        "romaji": "yonda"
+      },
+      "form-masu": {
+        "kana": "よびます",
+        "romaji": "yobimasu"
+      },
+      "form-neg": {
+        "kana": "よびません",
+        "romaji": "yobimasen"
+      },
+      "form-neg-past": {
+        "kana": "よびませんでした",
+        "romaji": "yobimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
+    "tags": "",
+    "columns": {
+      "eng": "die",
+      "inf-kanji": "死ぬ",
+      "inf-dict": {
+        "kana": "しぬ",
+        "romaji": "shinu"
+      },
+      "inf-neg": {
+        "kana": "しない",
+        "romaji": "shinai"
+      },
+      "inf-neg-past": {
+        "kana": "しなかった",
+        "romaji": "shinakatta"
+      },
+      "inf-te": {
+        "kana": "しんで",
+        "romaji": "shinde"
+      },
+      "inf-ta": {
+        "kana": "しんだ",
+        "romaji": "shinda"
+      },
+      "form-masu": {
+        "kana": "しにます",
+        "romaji": "shinimasu"
+      },
+      "form-neg": {
+        "kana": "しにません",
+        "romaji": "shinimasen"
+      },
+      "form-neg-past": {
+        "kana": "しにませんでした",
+        "romaji": "shinimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "u",
     "tags": "exception",
     "columns": {
       "eng": "enter",

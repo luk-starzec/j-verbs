@@ -5,7 +5,7 @@ const SETTINGS_STORAGE_KEY = "settings"
 
 const fetchVerbs = async () => {
   const urlVerbs = "./data/verbs.json";
-  const response = await fetch(urlVerbs);
+  const response = await fetch(urlVerbs, { cache: "no-cache" });
 
   return await response.json();
 };

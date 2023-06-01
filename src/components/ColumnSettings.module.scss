@@ -5,10 +5,10 @@ $large-radius: calc($size / 2);
 $small-radius: calc($size / 8);
 
 
-$color: hsl(210, 30%, 20%);
-$backcolor: hsl(210, 100%, 98%);
-$hover-backcolor: hsl(210, 100%, 95%);
-$button-backcolor: hsl(210, 100%, 20%);
+$color: $accent-color-darker;
+$backcolor: $accent-color-lighter;
+$hover-backcolor: $accent-color-light;
+$button-backcolor: $accent-color-dark;
 
 .wrapper {
   position: relative;

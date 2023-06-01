@@ -4,12 +4,12 @@ $size: 3rem;
 $large-radius: calc($size / 2);
 $small-radius: calc($size / 8);
 
-$info-color: hsl(210, 100%, 95%);
-$info-backcolor: hsl(210, 100%, 20%);
-$main-color: hsl(210, 100%, 10%);
-$main-backcolor: hsl(210, 100%, 98%);
-$main-bordercolor: hsl(210, 100%, 98%);
-$hover-backcolor: hsl(210, 100%, 95%);
+$info-color: $accent-color-light;
+$info-backcolor: $accent-color-dark;
+$main-color: $accent-color-darker;
+$main-backcolor: $accent-color-lighter;
+$main-bordercolor: $accent-color-lighter;
+$hover-backcolor: $accent-color-light;
 
 $transition: 0.1s ease;
 
