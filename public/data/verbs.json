@@ -970,12 +970,12 @@
         "romaji": "kiru"
       },
       "inf-neg": {
-        "kana": "きない",
-        "romaji": "kinai"
+        "kana": "きらない",
+        "romaji": "kiranai"
       },
       "inf-neg-past": {
-        "kana": "きなかった",
-        "romaji": "kinakatta"
+        "kana": "きらなかった",
+        "romaji": "kiranakatta"
       },
       "inf-te": {
         "kana": "きって",
@@ -986,16 +986,16 @@
         "romaji": "kitta"
       },
       "form-masu": {
-        "kana": "きます",
-        "romaji": "kimasu"
+        "kana": "きります",
+        "romaji": "kirimasu"
       },
       "form-neg": {
-        "kana": "きません",
-        "romaji": "kimasen"
+        "kana": "きりません",
+        "romaji": "kirimasen"
       },
       "form-neg-past": {
-        "kana": "きませんでした",
-        "romaji": "kimasendeshita"
+        "kana": "きりませんでした",
+        "romaji": "kirimasendeshita"
       }
     }
   },
