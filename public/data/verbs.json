@@ -770,12 +770,12 @@
         "romaji": "hashiru"
       },
       "inf-neg": {
-        "kana": "はしない",
-        "romaji": "hashinai"
+        "kana": "はしらない",
+        "romaji": "hashiranai"
       },
       "inf-neg-past": {
-        "kana": "はしなかった",
-        "romaji": "hashinakatta"
+        "kana": "はしらなかった",
+        "romaji": "hashiranakatta"
       },
       "inf-te": {
         "kana": "はしって",
@@ -843,46 +843,6 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "be",
-      "inf-kanji": "居る",
-      "inf-dict": {
-        "kana": "いる",
-        "romaji": "iru"
-      },
-      "inf-neg": {
-        "kana": "いない",
-        "romaji": "inai"
-      },
-      "inf-neg-past": {
-        "kana": "いなかった",
-        "romaji": "inakatta"
-      },
-      "inf-te": {
-        "kana": "いて",
-        "romaji": "ite"
-      },
-      "inf-ta": {
-        "kana": "いた",
-        "romaji": "ita"
-      },
-      "form-masu": {
-        "kana": "います",
-        "romaji": "imasu"
-      },
-      "form-neg": {
-        "kana": "いません",
-        "romaji": "imasen"
-      },
-      "form-neg-past": {
-        "kana": "いませんでした",
-        "romaji": "imasendeshita"
-      }
-    }
-  },
-  {
-    "group": "u",
-    "tags": "exception",
-    "columns": {
       "eng": "exist/have",
       "inf-kanji": "有る",
       "inf-dict": {
@@ -930,12 +890,12 @@
         "romaji": "kagiru"
       },
       "inf-neg": {
-        "kana": "かぎない",
-        "romaji": "kaginai"
+        "kana": "かぎらない",
+        "romaji": "kagiranai"
       },
       "inf-neg-past": {
-        "kana": "かぎなかった",
-        "romaji": "kaginakatta"
+        "kana": "かぎらなかった",
+        "romaji": "kagiranakatta"
       },
       "inf-te": {
         "kana": "かぎって",
@@ -946,16 +906,16 @@
         "romaji": "kagitta"
       },
       "form-masu": {
-        "kana": "かぎます",
-        "romaji": "kagimasu"
+        "kana": "かぎります",
+        "romaji": "kagirimasu"
       },
       "form-neg": {
-        "kana": "かぎません",
-        "romaji": "kagimasen"
+        "kana": "かぎりません",
+        "romaji": "kagirimasen"
       },
       "form-neg-past": {
-        "kana": "かぎませんでした",
-        "romaji": "kagimasendeshita"
+        "kana": "かぎりませんでした",
+        "romaji": "kagirimasendeshita"
       }
     }
   },
@@ -1010,12 +970,12 @@
         "romaji": "shaberu"
       },
       "inf-neg": {
-        "kana": "しゃべない",
-        "romaji": "shabenai"
+        "kana": "しゃべらない",
+        "romaji": "shaberanai"
       },
       "inf-neg-past": {
-        "kana": "しゃべなかった",
-        "romaji": "shabenakatta"
+        "kana": "しゃべらなかった",
+        "romaji": "shaberanakatta"
       },
       "inf-te": {
         "kana": "しゃべって",
@@ -1026,16 +986,16 @@
         "romaji": "shabetta"
       },
       "form-masu": {
-        "kana": "しゃべます",
-        "romaji": "shabemasu"
+        "kana": "しゃべります",
+        "romaji": "shaberimasu"
       },
       "form-neg": {
-        "kana": "しゃべません",
-        "romaji": "shabemasen"
+        "kana": "しゃべりません",
+        "romaji": "shaberimasen"
       },
       "form-neg-past": {
-        "kana": "しゃべませんでした",
-        "romaji": "shabemasendeshita"
+        "kana": "しゃべりませんでした",
+        "romaji": "shaberimasendeshita"
       }
     }
   },
@@ -1116,6 +1076,46 @@
       "form-neg-past": {
         "kana": "みませんでした",
         "romaji": "mimasendeshita"
+      }
+    }
+  },
+  {
+    "group": "ru",
+    "tags": "",
+    "columns": {
+      "eng": "be",
+      "inf-kanji": "居る",
+      "inf-dict": {
+        "kana": "いる",
+        "romaji": "iru"
+      },
+      "inf-neg": {
+        "kana": "いない",
+        "romaji": "inai"
+      },
+      "inf-neg-past": {
+        "kana": "いなかった",
+        "romaji": "inakatta"
+      },
+      "inf-te": {
+        "kana": "いて",
+        "romaji": "ite"
+      },
+      "inf-ta": {
+        "kana": "いた",
+        "romaji": "ita"
+      },
+      "form-masu": {
+        "kana": "います",
+        "romaji": "imasu"
+      },
+      "form-neg": {
+        "kana": "いません",
+        "romaji": "imasen"
+      },
+      "form-neg-past": {
+        "kana": "いませんでした",
+        "romaji": "imasendeshita"
       }
     }
   },
