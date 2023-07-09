@@ -1010,12 +1010,12 @@
         "romaji": "shaberu"
       },
       "inf-neg": {
-        "kana": "しゃべない",
-        "romaji": "shabenai"
+        "kana": "しゃべらない",
+        "romaji": "shaberanai"
       },
       "inf-neg-past": {
-        "kana": "しゃべなかった",
-        "romaji": "shabenakatta"
+        "kana": "しゃべらなかった",
+        "romaji": "shaberanakatta"
       },
       "inf-te": {
         "kana": "しゃべって",
@@ -1026,16 +1026,16 @@
         "romaji": "shabetta"
       },
       "form-masu": {
-        "kana": "しゃべます",
-        "romaji": "shabemasu"
+        "kana": "しゃべります",
+        "romaji": "shaberimasu"
       },
       "form-neg": {
-        "kana": "しゃべません",
-        "romaji": "shabemasen"
+        "kana": "しゃべりません",
+        "romaji": "shaberimasen"
       },
       "form-neg-past": {
-        "kana": "しゃべませんでした",
-        "romaji": "shabemasendeshita"
+        "kana": "しゃべりませんでした",
+        "romaji": "shaberimasendeshita"
       }
     }
   },
