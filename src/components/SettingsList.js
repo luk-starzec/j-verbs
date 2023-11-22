@@ -37,9 +37,11 @@ const SettingsList = () => {
                 <TextFormatSettings isCollapsed={optionsCollapsed} />
             </div>
 
-            <button className={styles.button} title={buttonTitle} onClick={handleTest}>
-                <img src={icon} alt="..." className={styles.icon} />
-            </button>
+            <div className={styles.buttonWrapper}>
+                <button className={styles.button} title={buttonTitle} onClick={handleTest}>
+                    <img src={icon} alt="..." className={styles.icon} />
+                </button>
+            </div>
         </div>
     )
 }

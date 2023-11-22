@@ -24,3 +24,4 @@ yarn-error.log*
 /DataGenerator/.vs
 /DataGenerator/JVerbsDataConverter/bin
 /DataGenerator/JVerbsDataConverter/obj
+/.vscode

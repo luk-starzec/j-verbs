@@ -94,7 +94,6 @@ const ColumnList = () => {
             ...i,
             isChecked: i.name === itemName ? isChecked : i.isChecked,
         }));
-
         const ctx = { ...context, columns: result }
         context.setContext(ctx);
         saveSettings(ctx);
@@ -105,7 +104,9 @@ const ColumnList = () => {
             ...i,
             isChecked: i.group === groupName ? isChecked : i.isChecked,
         }));
-        context.setContext({ ...context, columns: result });
+        const ctx = { ...context, columns: result }
+        context.setContext(ctx);
+        saveSettings(ctx);
     };
 
     const renderItem = (item) => (

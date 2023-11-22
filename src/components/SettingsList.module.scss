@@ -2,12 +2,13 @@
 
 $backcolor: $accent-color-dark;
 $backcolor2: $accent-color-light;
+$leftMargin: 0.25rem;
 
 .wrapper {
     position: fixed;
     bottom: 0.25rem;
     width: 3rem;
-    margin-left: 0.25rem;
+    margin-left: $leftMargin;
     display: flex;
     z-index: 100;
     animation: wrapper-slide-in 1s ease;
@@ -37,14 +38,24 @@ $backcolor2: $accent-color-light;
     margin-left: 4rem;
     display: flex;
     gap: 0.5rem;
-    transition: 0.3s ease;
-    transform: translateX(-15rem);
+    transition: transform 0.3s ease;
+    transform: translateX(-11rem);
+}
+
+.buttonWrapper {
+    position: absolute;
+    width: 3rem + $leftMargin;
+    height: 3rem;
+    margin-left: -$leftMargin;
+    border-radius: 0 50% 50% 0;
+    background: #fff;
 }
 
 .button {
     position: absolute;
     width: 3rem;
     height: 3rem;
+    margin-left: $leftMargin;
     display: flex;
     justify-content: center;
     align-items: center;
