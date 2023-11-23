@@ -12,7 +12,7 @@ const fetchVerbs = async () => {
 
 const fetchColumns = async () => {
   const urlColumns = "./data/columns.json";
-  const response = await fetch(urlColumns);
+  const response = await fetch(urlColumns, { cache: "no-cache" });
   const dataColumns = await response.json();
 
   return dataColumns

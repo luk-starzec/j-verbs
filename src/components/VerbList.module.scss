@@ -3,25 +3,36 @@
 .table {
     position: relative;
     margin-inline: auto;
-    border: 1px solid $bordercolor-table;
     color: $color-text-black;
     border-collapse: collapse;
     z-index: 50;
+    box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 5px;
+    ;
 
     thead {
-        background: hsl(210, 100%, 95%);
+        background: $accent-color-dark;
+        color: $accent-color-lighter;
     }
 
     td,
     th {
-        border: 1px solid $bordercolor-table;
+        border-style: solid;
+        border-width: 1px;
         padding: .25rem 1rem;
+    }
+
+    td {
+        border-color: $bordercolor-table;
+    }
+
+    th {
+        border-color: $bordercolor-table-header;
     }
 }
 
 .headerDescription {
-    color: $color-text-gray;
     font-style: italic;
+    opacity: 0.8;
 }
 
 .cellSubText {

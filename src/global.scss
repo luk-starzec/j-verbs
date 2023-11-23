@@ -1,9 +1,10 @@
-$backcolor-verb-u: hsl(60, 90%, 98%);
-$backcolor-verb-u-exception: hsl(60, 90%, 95%);
-$backcolor-verb-ru: hsl(120, 90%, 98%);
-$backcolor-verb-irregular: hsl(270, 90%, 98%);
+$backcolor-verb-u: hsl(60, 90%, 95%);
+$backcolor-verb-u-exception: hsl(60, 90%, 92%);
+$backcolor-verb-ru: hsl(120, 90%, 95%);
+$backcolor-verb-irregular: hsl(270, 90%, 95%);
 
-$bordercolor-table: #ccc;
+$bordercolor-table: rgba(128, 128, 128, 0.2);
+$bordercolor-table-header: rgba(128, 128, 128, 0.5);
 
 $color-text-black: #333;
 $color-text-gray: #666;
