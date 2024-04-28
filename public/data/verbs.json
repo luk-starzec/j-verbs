@@ -724,7 +724,7 @@
     "tags": "exception",
     "columns": {
       "eng": "return",
-      "inf-kanji": "変える",
+      "inf-kanji": "帰る",
       "inf-dict": {
         "kana": "かえる",
         "romaji": "kaeru"
