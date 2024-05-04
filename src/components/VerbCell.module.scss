@@ -1,0 +1,37 @@
+.cellReading {
+    font-weight: 600;
+    font-size: 95%;
+}
+
+.cellWrapper {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.cellWrapper div {
+    grid-column: 1;
+}
+
+.readButton {
+    grid-row: 1;
+    grid-column: 2;
+    width: 1.5rem;
+    justify-self: end;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    margin-right: -1rem;
+    cursor: pointer;
+    opacity: 0.3;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.readingButton {
+    opacity: 0.7;
+}

@@ -28,6 +28,10 @@
     th {
         border-color: $bordercolor-table-header;
     }
+
+    .readControlCell {
+        padding: 0.25rem 0.5rem;
+    }
 }
 
 .headerDescription {
