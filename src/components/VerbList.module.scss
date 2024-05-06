@@ -33,31 +33,3 @@
         padding: 0.25rem 0.5rem;
     }
 }
-
-.headerDescription {
-    opacity: 0.75;
-    font-size: smaller;
-}
-
-.cellSubText {
-    color: $color-text-gray;
-}
-
-.row {
-
-    &_u {
-        background: $backcolor-verb-u;
-    }
-
-    &_ru {
-        background: $backcolor-verb-ru;
-    }
-
-    &_irregular {
-        background: $backcolor-verb-irregular;
-    }
-
-    &_exceptionTag {
-        background: $backcolor-verb-u-exception;
-    }
-}

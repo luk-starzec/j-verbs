@@ -710,12 +710,12 @@
         "romaji": "haimasu"
       },
       "form-neg": {
-        "kana": "ひません",
-        "romaji": "himasen"
+        "kana": "はいません",
+        "romaji": "haimasen"
       },
       "form-neg-past": {
-        "kana": "ひませんでした",
-        "romaji": "himasendeshita"
+        "kana": "はいませんでした",
+        "romaji": "haimasendeshita"
       }
     }
   },

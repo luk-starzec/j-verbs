@@ -5,7 +5,7 @@ import playIcon from "../assets/play_icon.svg"
 import pauseIcon from "../assets/pause_icon.svg"
 import stopIcon from "../assets/stop_icon.svg"
 
-export const ReadControl = ({ showPlay, showPause, showStop, onPlay, onPause, onStop }) => {
+const ReadControl = ({ showPlay, showPause, showStop, onPlay, onPause, onStop }) => {
 
     const playImage = showStop ? playIcon : speakerIcon;
     const playTitle = showStop ? 'continue reading' : 'read row'
@@ -32,3 +32,4 @@ export const ReadControl = ({ showPlay, showPause, showStop, onPlay, onPause, on
         </div>
     )
 }
+export default ReadControl
