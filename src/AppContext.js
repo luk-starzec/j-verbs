@@ -2,7 +2,7 @@ import { createContext } from "react";
 
 export const AppContext = createContext({
   columns: {},
-  varbs: [],
+  verbs: [],
   textFormat: [],
   verbGroups: [],
   setContext: null,

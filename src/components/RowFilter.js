@@ -29,12 +29,12 @@ const RowFilter = ({ isCollapsed }) => {
   const onItemSelected = (item) => {
     const selectedValue = verbGroupsList.find(f => f.name === item.name).value;
 
-    let selectedVerbGroups = context.verbGroups;
+    let newSelectedVerbGroups = [...context.verbGroups];
     item.isChecked
-      ? selectedVerbGroups.splice(selectedVerbGroups.indexOf(selectedValue), 1)
-      : selectedVerbGroups.push(selectedValue);
+      ? newSelectedVerbGroups.splice(newSelectedVerbGroups.indexOf(selectedValue), 1)
+      : newSelectedVerbGroups.push(selectedValue);
 
-    const ctx = { ...context, verbGroups: selectedVerbGroups }
+    const ctx = { ...context, verbGroups: newSelectedVerbGroups }
     context.setContext(ctx);
     saveSettings(ctx);
   };

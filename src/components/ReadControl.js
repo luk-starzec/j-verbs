@@ -5,19 +5,22 @@ import playIcon from "../assets/play_icon.svg"
 import pauseIcon from "../assets/pause_icon.svg"
 import stopIcon from "../assets/stop_icon.svg"
 
-const ReadControl = ({ showPlay, showPause, showStop, onPlay, onPause, onStop }) => {
+const ReadControl = ({ showSpeaker, showPlay, showPause, showStop, speakerTitle, onSpeaker, onPlay, onPause, onStop }) => {
 
-    const playImage = showStop ? playIcon : speakerIcon;
-    const playTitle = showStop ? 'continue reading' : 'read row'
     let buttonCss = styles.button;
     if (showStop)
         buttonCss = `${buttonCss} ${styles.buttonBorder}`
 
     return (
         <div className={styles.wrapper}>
+            {showSpeaker &&
+                <button className={buttonCss} onClick={() => onSpeaker()} title={speakerTitle}>
+                    <img src={speakerIcon} alt="read" />
+                </button>
+            }
             {showPlay &&
-                <button className={buttonCss} onClick={() => onPlay()} title={playTitle}>
-                    <img src={playImage} alt="read" />
+                <button className={buttonCss} onClick={() => onPlay()} title='continue reading'>
+                    <img src={playIcon} alt="continue" />
                 </button>
             }
             {showPause &&
