@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import PropTypes from "prop-types";
-import checkIcon from "../../assets/check_icon.svg"
-import closeIcon from "../../assets/close_icon.svg"
+import { ReactComponent as CheckIcon } from "../../assets/check_icon.svg"
+import { ReactComponent as CloseIcon } from "../../assets/close_icon.svg"
 import styles from "./OptionsList.module.scss";
 
 const OptionsList = (props) => {
@@ -70,7 +70,7 @@ const OptionsList = (props) => {
   const renderItemCheckbox = (item) => {
     switch (item.isChecked) {
       case true:
-        return <img src={checkIcon} alt="+" />;
+        return <CheckIcon />;
       case false:
         return <span className={styles.checkPlaceholder}></span>;
       default:
@@ -88,7 +88,7 @@ const OptionsList = (props) => {
         </ul>
 
         <button className={styles.closeButton} onClick={handleHideOptions} title="Close">
-          <img src={closeIcon} alt="X" />
+          <CloseIcon />
         </button>
 
       </div>

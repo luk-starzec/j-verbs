@@ -1,6 +1,4 @@
-@import "../global";
-
-$border-color: $bordercolor-table;
+@import '../global';
 
 .wrapper {
     position: relative;
@@ -13,39 +11,41 @@ $border-color: $bordercolor-table;
 
 .list {
     list-style: none;
-    background-color: #fff;
+    background-color: var(--backcolor-main);
     padding: 0.75rem 0 0 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    gap: 1rem
+    gap: 1rem;
+    transition: $color-mode-transition;
 }
 
 .item {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: var(--color-text-gray);
 }
 
 .itemColor {
     width: 2rem;
     height: 1rem;
-    border: 1px solid $border-color;
+    border: 1px solid var(--bordercolor-table);
 
     &_u {
-        background: $backcolor-verb-u;
+        background: var(--backcolor-verb-u);
     }
 
     &_ru {
-        background: $backcolor-verb-ru;
+        background: var(--backcolor-verb-ru);
     }
 
     &_irregular {
-        background: $backcolor-verb-irregular;
+        background: var(--backcolor-verb-irregular);
     }
 
     &_exceptionTag {
-        background: $backcolor-verb-u-exception;
+        background: var(--backcolor-verb-u-exception);
     }
 }
 

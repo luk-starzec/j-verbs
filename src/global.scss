@@ -1,18 +1,51 @@
-$backcolor-verb-u: hsl(60, 90%, 95%);
-$backcolor-verb-u-exception: hsl(60, 90%, 92%);
-$backcolor-verb-ru: hsl(120, 90%, 95%);
-$backcolor-verb-irregular: hsl(270, 90%, 95%);
+:root {
+    --backcolor-main: #fff;
 
-$bordercolor-table: rgba(128, 128, 128, 0.2);
-$bordercolor-table-header: rgba(128, 128, 128, 0.5);
+    --backcolor-table-header: hsl(210, 100%, 20%);
+    --color-table-header: hsl(210, 100%, 98%);
 
-$color-text-black: #333;
-$color-text-gray: #666;
+    --backcolor-verb-u: hsl(60, 90%, 95%);
+    --backcolor-verb-u-exception: hsl(50, 90%, 92%);
+    --backcolor-verb-ru: hsl(120, 90%, 95%);
+    --backcolor-verb-irregular: hsl(270, 90%, 95%);
 
-$accent-color-dark: hsl(210, 100%, 20%);
-$accent-color-darker: hsl(210, 100%, 10%);
-$accent-color-light: hsl(210, 100%, 95%);
-$accent-color-lighter: hsl(210, 100%, 98%);
+    --bordercolor-table: rgba(128, 128, 128, 0.2);
+    --bordercolor-table-header: rgba(128, 128, 128, 0.5);
 
-$shadow-light:  rgba(0, 0, 0, 0.1) 3px 0px 4px;
-$shadow-dark:  rgba(0, 0, 0, 0.25) 3px 1px 5px;
+    --color-text-black: #333;
+    --color-text-gray: #666;
+
+    --accent-color-dark: hsl(210, 100%, 20%);
+    --accent-color-darker: hsl(210, 100%, 10%);
+    --accent-color-light: hsl(210, 100%, 95%);
+    --accent-color-lighter: hsl(210, 100%, 98%);
+
+    --shadow-light: rgba(0, 0, 0, 0.1) 3px 0px 4px;
+    --shadow-dark: rgba(0, 0, 0, 0.25) 3px 1px 5px;
+}
+
+[data-theme='dark'] {
+    --backcolor-main: #272727;
+
+    --backcolor-table-header: hsl(220, 20%, 20%);
+    --color-table-header: hsl(210, 100%, 98%);
+    ;
+
+    --backcolor-verb-u: hsl(40, 0%, 20%);
+    --backcolor-verb-u-exception: hsl(40, 0%, 13%);
+    --backcolor-verb-ru: hsl(120, 10%, 20%);
+    --backcolor-verb-irregular: hsl(270, 10%, 20%);
+
+    --bordercolor-table: rgba(20, 20, 20, 0.2);
+    --bordercolor-table-header: rgba(0, 0, 0, 0.2);
+
+    --color-text-black: #fff;
+    --color-text-gray: #bbb;
+
+    --accent-color-dark: hsl(220, 100%, 80%);
+    --accent-color-darker: hsl(220, 100%, 90%);
+    --accent-color-light: hsl(220, 30%, 35%);
+    --accent-color-lighter: hsl(220, 20%, 20%);
+}
+
+$color-mode-transition: background-color 0.5s ease 0s;

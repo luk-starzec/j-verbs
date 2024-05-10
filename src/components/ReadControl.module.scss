@@ -10,7 +10,7 @@
 
 .button {
     border: 1px solid transparent;
-    border-radius: 10%;
+    border-radius: 0.25rem;
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -19,17 +19,26 @@
     height: 1.75rem;
     cursor: pointer;
 
-    img {
+    svg {
+        stroke: var(--color-text-black);
+        fill: var(--color-text-black);
+    }
+
+    svg {
         opacity: 0.5;
     }
 
     &:hover {
-        img {
-            opacity: 0.7;
+        svg {
+            opacity: 1;
         }
     }
 }
 
 .buttonBorder {
-    border: 1px solid rgba(128, 128, 128, 0.2);
+    border: 1px solid var(--bordercolor-table);
+
+    &:hover {
+        border: thin solid var(--color-text-gray);
+    }
 }

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./ColumnSettings.module.scss";
-import mainIcon from "../assets/table_icon.svg"
-import closeIcon from "../assets/close_icon.svg"
+import { ReactComponent as MainIcon } from "../assets/table_icon.svg"
+import { ReactComponent as CloseIcon } from "../assets/close_icon.svg"
 import ColumnList from "./ColumnList";
 
 const ColumnSettings = ({ isCollapsed }) => {
@@ -28,7 +28,7 @@ const ColumnSettings = ({ isCollapsed }) => {
           <ColumnList />
         </div>
         <button className={styles.closeButtton} onClick={handleHideOptions} title="Close">
-          <img src={closeIcon} alt="X" />
+          <CloseIcon />
         </button>
       </div>
 
@@ -39,7 +39,7 @@ const ColumnSettings = ({ isCollapsed }) => {
           optionsVisible ? handleHideOptions() : handleShowOptions()
         }
       >
-        <img src={mainIcon} alt="..." className={styles.icon} />
+        <MainIcon className={styles.icon} />
       </button>
 
     </div>

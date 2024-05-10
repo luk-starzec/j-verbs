@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from "./VerbCell.module.scss";
-import speakerOnIcon from "../assets/speaker_high_icon.svg"
-import speakerOffIcon from "../assets/speaker_none_icon.svg"
+import { ReactComponent as SpeakerOnIcon } from "../assets/speaker_high_icon.svg"
+import { ReactComponent as SpeakerOffIcon } from "../assets/speaker_none_icon.svg"
 
 const VerbCell = ({ cell, isReadSupported, isReading, isPaused, onRead }) => {
 
   const cellCss = isReading ? styles.cellReading : null;
-  const speakerIcon = isReading && !isPaused ? speakerOnIcon : speakerOffIcon;
+  const speakerOn = isReading && !isPaused
   const speakerCss = `${styles.readButton} ${isReading ? styles.readingButton : ''}`;
   const speakerTitle = `read "${cell.kana}"`;
 
@@ -25,7 +25,10 @@ const VerbCell = ({ cell, isReadSupported, isReading, isPaused, onRead }) => {
         }
         {isReadSupported && cell.voice &&
           <button className={speakerCss} onClick={() => onRead()} title={speakerTitle}>
-            <img src={speakerIcon} alt="read" />
+            {speakerOn &&
+              <SpeakerOnIcon />}
+            {!speakerOn &&
+              <SpeakerOffIcon />}
           </button>
         }
       </div>

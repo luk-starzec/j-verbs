@@ -1,17 +1,15 @@
-@import "../global";
-
 .table {
     position: relative;
     margin-inline: auto;
-    color: $color-text-black;
+    color: var(--color-text-black);
     border-collapse: collapse;
     z-index: 50;
     box-shadow: rgba(0, 0, 0, 0.15) 3px 3px 5px;
     ;
 
     thead {
-        background: $accent-color-dark;
-        color: $accent-color-lighter;
+        background: var(--backcolor-table-header);
+        color: var(--color-table-header);
     }
 
     td,
@@ -22,11 +20,11 @@
     }
 
     td {
-        border-color: $bordercolor-table;
+        border-color: var(--bordercolor-table);
     }
 
     th {
-        border-color: $bordercolor-table-header;
+        border-color: var(--bordercolor-table-header);
     }
 
     .readControlCell {

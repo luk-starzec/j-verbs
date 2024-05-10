@@ -1,20 +1,18 @@
-@import "../global";
-
 .row {
 
     &_u {
-        background: $backcolor-verb-u;
+        background: var(--backcolor-verb-u);
     }
 
     &_ru {
-        background: $backcolor-verb-ru;
+        background: var(--backcolor-verb-ru);
     }
 
     &_irregular {
-        background: $backcolor-verb-irregular;
+        background: var(--backcolor-verb-irregular);
     }
 
     &_exceptionTag {
-        background: $backcolor-verb-u-exception;
+        background: var(--backcolor-verb-u-exception);
     }
 }

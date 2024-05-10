@@ -1,14 +1,12 @@
-@import "../global";
-
 $size: 3rem;
 $large-radius: calc($size / 2);
 $small-radius: calc($size / 8);
 
 
-$color: $accent-color-darker;
-$backcolor: $accent-color-lighter;
-$hover-backcolor: $accent-color-light;
-$button-backcolor: $accent-color-dark;
+$color: var(--accent-color-darker);
+$backcolor: var(--accent-color-lighter);
+$hover-backcolor: var(--accent-color-light);
+$button-backcolor: var(--accent-color-dark);
 
 .wrapper {
   position: relative;
@@ -29,22 +27,22 @@ $button-backcolor: $accent-color-dark;
   background: $button-backcolor;
   color: $backcolor;
   cursor: pointer;
-  box-shadow: $shadow-light;
+  box-shadow: var(--shadow-light);
   transition: 0.1s ease;
 
   &:hover {
     background-color: $hover-backcolor;
-    box-shadow: $shadow-light;
+    box-shadow: var(--shadow-light);
 
-    img {
-      filter: invert(1);
+    svg {
+      fill: var(--accent-color-dark);
     }
   }
-
 }
 
 .icon {
   width: 2rem;
+  fill: var(--accent-color-light);
 }
 
 .optionsWrapper {
@@ -55,7 +53,7 @@ $button-backcolor: $accent-color-dark;
   background-color: $backcolor;
   border: 0;
   border-radius: $large-radius 0 $small-radius $large-radius;
-  box-shadow: $shadow-light;
+  box-shadow: var(--shadow-light);
   transform-origin: top right;
   transform: scaleY(0);
   transition: transform 0.1s ease;
@@ -65,7 +63,6 @@ $button-backcolor: $accent-color-dark;
     display: block;
   }
 }
-
 
 .closeButtton {
   width: calc(100% - 1rem);
@@ -77,8 +74,9 @@ $button-backcolor: $accent-color-dark;
   color: $color;
   cursor: pointer;
 
-  img {
+  svg {
     width: 0.75rem;
+    fill: var(--accent-color-dark);
   }
 
   &:hover {
@@ -96,7 +94,7 @@ $button-backcolor: $accent-color-dark;
   background: $backcolor;
   border: 0;
   border-radius: $small-radius $small-radius 0 0;
-  box-shadow: $shadow-light;
+  box-shadow: var(--shadow-light);
   transform-origin: bottom;
   animation: show-list 0.1s ease;
 }

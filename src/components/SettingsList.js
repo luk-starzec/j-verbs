@@ -3,7 +3,7 @@ import ColumnSettings from './ColumnSettings'
 import RowFilter from './RowFilter'
 import TextFormatSettings from './TextFormatSettings'
 import styles from "./SettingsList.module.scss"
-import icon from "../assets/settings_icon.svg"
+import { ReactComponent as SettingsIcon } from "../assets/settings_icon.svg"
 
 const SettingsList = () => {
     const [isExpanded, setIsexpanded] = useState()
@@ -39,7 +39,7 @@ const SettingsList = () => {
 
             <div className={styles.buttonWrapper}>
                 <button className={styles.button} title={buttonTitle} onClick={handleTest}>
-                    <img src={icon} alt="..." className={styles.icon} />
+                    <SettingsIcon className={styles.icon} />
                 </button>
             </div>
         </div>

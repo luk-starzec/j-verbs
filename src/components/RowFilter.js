@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./RowFilter.module.scss";
-import icon from "../assets/filter_icon.svg"
+import { ReactComponent as Icon } from "../assets/filter_icon.svg"
 import OptionsList from "./common/OptionsList";
 import { AppContext } from "../AppContext";
 import { VerbGroups } from "../helpers/verbGroupHelper";
@@ -48,7 +48,7 @@ const RowFilter = ({ isCollapsed }) => {
         optionsWrapperCss={styles.optionsWrapper}
         isCollapsed={isCollapsed}
       >
-        <img src={icon} className={styles.icon} alt="..." />
+        <Icon className={styles.icon} />
       </OptionsList>
     </div>
   );

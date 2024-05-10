@@ -1,7 +1,7 @@
-@import "../global";
+@import '../global';
 
-$backcolor: $accent-color-dark;
-$backcolor2: $accent-color-light;
+$backcolor: var(--accent-color-dark);
+$backcolor2: var(--accent-color-lighter);
 $leftMargin: 0.25rem;
 
 .wrapper {
@@ -24,12 +24,16 @@ $leftMargin: 0.25rem;
             transform: rotate(360deg);
 
             &:hover {
-                box-shadow: $shadow-dark;
+                box-shadow: var(--shadow-dark);
+
+                .icon {
+                    fill: var(--accent-color-light);
+                }
             }
         }
 
         .icon {
-            filter: saturate(15) brightness(0.3) hue-rotate(60deg);
+            fill: var(--accent-color-dark);
         }
     }
 }
@@ -48,7 +52,8 @@ $leftMargin: 0.25rem;
     height: 3rem;
     margin-left: -$leftMargin;
     border-radius: 0 50% 50% 0;
-    background: #fff;
+    background: var(--backcolor-main);
+    transition: $color-mode-transition;
 }
 
 .button {
@@ -64,18 +69,20 @@ $leftMargin: 0.25rem;
     background: $backcolor;
     color: $backcolor2;
     cursor: pointer;
-    box-shadow: $shadow-light;
+    box-shadow: var(--shadow-light);
     transition: 0.2s ease;
 
     &:hover {
-        box-shadow: $shadow-dark;
-        filter: brightness(1.3);
+        box-shadow: var(--shadow-dark);
+        background-color: var(--accent-color-darker);
+        border-color: var(--accent-color-darker);
     }
 }
 
 .icon {
     width: 2rem;
     transition: 0.2s ease;
+    fill: var(--accent-color-lighter);
 }
 
 @keyframes wrapper-slide-in {

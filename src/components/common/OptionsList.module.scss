@@ -1,15 +1,13 @@
-@import "../../global";
-
 $size: 3rem;
 $large-radius: calc($size / 2);
 $small-radius: calc($size / 8);
 
-$info-color: $accent-color-light;
-$info-backcolor: $accent-color-dark;
-$main-color: $accent-color-darker;
-$main-backcolor: $accent-color-lighter;
-$main-bordercolor: $accent-color-lighter;
-$hover-backcolor: $accent-color-light;
+$info-color: var(--accent-color-light);
+$info-backcolor: var(--accent-color-dark);
+$main-color: var(--color-text-black);
+$main-backcolor: var(--accent-color-lighter);
+$main-bordercolor: var(--accent-color-lighter);
+$hover-backcolor: var(--accent-color-light);
 
 $transition: 0.1s ease;
 
@@ -60,7 +58,7 @@ $transition: 0.1s ease;
     transform: translateY(0.5rem) scaleX(0);
     transform-origin: calc($size + ($size / 2));
     transition: $transition;
-    box-shadow: $shadow-light;
+    box-shadow: var(--shadow-light);
 
     &_visible {
         display: block;
@@ -96,7 +94,7 @@ $transition: 0.1s ease;
     transform: scaleY(0);
     transform-origin: bottom;
     transition: $transition;
-    box-shadow: $shadow-light;
+    box-shadow: var(--shadow-light);
 }
 
 .listItem {
@@ -118,9 +116,13 @@ $transition: 0.1s ease;
     font-size: 1rem;
     cursor: pointer;
 
+    svg {
+        stroke: var(--accent-color-dark);
+        fill: var(--accent-color-dark);
+    }
+
     &:hover {
         background: $hover-backcolor;
-        color: #000;
     }
 
     &_withImg {
@@ -150,8 +152,10 @@ $transition: 0.1s ease;
     padding-left: calc($size / 3 * 2);
     color: $main-color;
 
-    img {
+
+    svg {
         width: 0.75rem;
+        fill: var(--accent-color-dark);
     }
 
     &:hover {
@@ -174,16 +178,17 @@ $transition: 0.1s ease;
     cursor: pointer;
     color: $info-color;
     font-size: 1.2rem;
-    box-shadow: $shadow-light;
+    box-shadow: var(--shadow-light);
     transition: 0.1s ease;
 
     &:hover {
         background: $hover-backcolor;
-        box-shadow: $shadow-dark;
+        box-shadow: var(--shadow-dark);
 
-        img,
+        svg,
         span {
-            filter: invert(1);
+            fill: var(--accent-color-dark);
+            color: var(--accent-color-dark);
         }
     }
 }

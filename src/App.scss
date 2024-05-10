@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import "./global";
 
 * {
   box-sizing: border-box;
   font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+  background-color: var(--backcolor-main);
+  transition: $color-mode-transition;
 }
 
 .App {
@@ -20,12 +26,18 @@
   width: 4rem;
   height: 4rem;
   margin: 0.5rem;
+
+  path {
+    fill: var(--backcolor-main);
+  }
+
+  fill: var(--accent-color-dark)
 }
 
 .AppTitle {
   flex-grow: 1;
   text-align: center;
-  color: hsl(210, 100%, 15%);
+  color: var(--accent-color-dark);
   margin-left: -4.5rem;
 }
 
@@ -45,10 +57,22 @@
   z-index: -1;
 }
 
+.react-toggle {
+  height: 18px;
+  width: 3rem;
+  margin-right: 1rem;
+  align-self: center;
+}
+
+.react-toggle-track {
+  border-radius: 16px !important;
+}
+
 @keyframes header-slide-in {
   from {
     transform: translateY(-100vh)
   }
+
   to {
     transform: translateY(0);
   }
@@ -58,6 +82,7 @@
   from {
     transform: scaleY(0)
   }
+
   to {
     transform: scaleY(1)
   }
