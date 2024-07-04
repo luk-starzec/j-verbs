@@ -3,7 +3,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "write",
+      "eng": "to write",
       "inf-kanji": "書く",
       "inf-dict": {
         "kana": "かく",
@@ -43,7 +43,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "read",
+      "eng": "to read",
       "inf-kanji": "読む",
       "inf-dict": {
         "kana": "よむ",
@@ -83,7 +83,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "listen",
+      "eng": "to listen",
       "inf-kanji": "聞く",
       "inf-dict": {
         "kana": "きく",
@@ -123,7 +123,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "speak",
+      "eng": "to speak",
       "inf-kanji": "話す",
       "inf-dict": {
         "kana": "はなす",
@@ -163,7 +163,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "drink",
+      "eng": "to drink",
       "inf-kanji": "飲む",
       "inf-dict": {
         "kana": "のむ",
@@ -203,7 +203,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "buy",
+      "eng": "to buy",
       "inf-kanji": "買う",
       "inf-dict": {
         "kana": "かう",
@@ -243,7 +243,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "work",
+      "eng": "to work",
       "inf-kanji": "働く",
       "inf-dict": {
         "kana": "はたらく",
@@ -283,7 +283,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "play",
+      "eng": "to play",
       "inf-kanji": "遊ぶ",
       "inf-dict": {
         "kana": "あそぶ",
@@ -323,7 +323,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "swim",
+      "eng": "to swim",
       "inf-kanji": "泳ぐ",
       "inf-dict": {
         "kana": "およぐ",
@@ -363,7 +363,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "hurry",
+      "eng": "to hurry",
       "inf-kanji": "急ぐ",
       "inf-dict": {
         "kana": "いそぐ",
@@ -403,7 +403,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "wait",
+      "eng": "to wait",
       "inf-kanji": "待つ",
       "inf-dict": {
         "kana": "まつ",
@@ -443,7 +443,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "understand",
+      "eng": "to understand",
       "inf-kanji": "分かる",
       "inf-dict": {
         "kana": "わかる",
@@ -483,7 +483,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "wash",
+      "eng": "to wash",
       "inf-kanji": "洗う",
       "inf-dict": {
         "kana": "わしゃらう",
@@ -523,7 +523,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "stand up",
+      "eng": "to stand up",
       "inf-kanji": "立つ",
       "inf-dict": {
         "kana": "たつ",
@@ -563,7 +563,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "sit",
+      "eng": "to sit",
       "inf-kanji": "座る",
       "inf-dict": {
         "kana": "すわる",
@@ -603,7 +603,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "call",
+      "eng": "to call",
       "inf-kanji": "呼ぶ",
       "inf-dict": {
         "kana": "よぶ",
@@ -643,7 +643,7 @@
     "group": "u",
     "tags": "",
     "columns": {
-      "eng": "die",
+      "eng": "to die",
       "inf-kanji": "死ぬ",
       "inf-dict": {
         "kana": "しぬ",
@@ -683,7 +683,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "enter",
+      "eng": "to enter",
       "inf-kanji": "入る",
       "inf-dict": {
         "kana": "はいる",
@@ -723,7 +723,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "return",
+      "eng": "to return",
       "inf-kanji": "帰る",
       "inf-dict": {
         "kana": "かえる",
@@ -763,7 +763,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "run",
+      "eng": "to run",
       "inf-kanji": "走る",
       "inf-dict": {
         "kana": "はしる",
@@ -803,7 +803,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "go",
+      "eng": "to go",
       "inf-kanji": "行く",
       "inf-dict": {
         "kana": "いく",
@@ -843,7 +843,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "exist/have",
+      "eng": "to exist/have",
       "inf-kanji": "有る",
       "inf-dict": {
         "kana": "ある",
@@ -883,7 +883,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "limit",
+      "eng": "to limit",
       "inf-kanji": "限る",
       "inf-dict": {
         "kana": "かぎる",
@@ -923,7 +923,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "cut",
+      "eng": "to cut",
       "inf-kanji": "切る",
       "inf-dict": {
         "kana": "きる",
@@ -963,7 +963,7 @@
     "group": "u",
     "tags": "exception",
     "columns": {
-      "eng": "chatter",
+      "eng": "to chatter",
       "inf-kanji": "喋る",
       "inf-dict": {
         "kana": "しゃべる",
@@ -1003,7 +1003,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "eat",
+      "eng": "to eat",
       "inf-kanji": "食べる",
       "inf-dict": {
         "kana": "たべる",
@@ -1043,7 +1043,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "see",
+      "eng": "to see",
       "inf-kanji": "見る",
       "inf-dict": {
         "kana": "みる",
@@ -1083,7 +1083,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "be",
+      "eng": "to be",
       "inf-kanji": "居る",
       "inf-dict": {
         "kana": "いる",
@@ -1123,7 +1123,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "sleep",
+      "eng": "to sleep",
       "inf-kanji": "寝る",
       "inf-dict": {
         "kana": "ねる",
@@ -1163,7 +1163,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "get up",
+      "eng": "to get up",
       "inf-kanji": "起きる",
       "inf-dict": {
         "kana": "おきる",
@@ -1203,7 +1203,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "wear",
+      "eng": "to wear",
       "inf-kanji": "着る",
       "inf-dict": {
         "kana": "きる",
@@ -1243,7 +1243,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "open",
+      "eng": "to open",
       "inf-kanji": "開ける",
       "inf-dict": {
         "kana": "あける",
@@ -1283,7 +1283,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "give",
+      "eng": "to give",
       "inf-kanji": "",
       "inf-dict": {
         "kana": "あげる",
@@ -1323,7 +1323,7 @@
     "group": "ru",
     "tags": "",
     "columns": {
-      "eng": "go out",
+      "eng": "to go out",
       "inf-kanji": "出る",
       "inf-dict": {
         "kana": "でる",
@@ -1363,7 +1363,7 @@
     "group": "irregular",
     "tags": "",
     "columns": {
-      "eng": "do",
+      "eng": "to do",
       "inf-kanji": "",
       "inf-dict": {
         "kana": "する",
@@ -1403,7 +1403,7 @@
     "group": "irregular",
     "tags": "",
     "columns": {
-      "eng": "come",
+      "eng": "to come",
       "inf-kanji": "来る",
       "inf-dict": {
         "kana": "くる",
@@ -1436,46 +1436,6 @@
       "form-neg-past": {
         "kana": "きませんでした",
         "romaji": "kimasendeshita"
-      }
-    }
-  },
-  {
-    "group": "",
-    "tags": "",
-    "columns": {
-      "eng": "",
-      "inf-kanji": "",
-      "inf-dict": {
-        "kana": "",
-        "romaji": ""
-      },
-      "inf-neg": {
-        "kana": "",
-        "romaji": ""
-      },
-      "inf-neg-past": {
-        "kana": "",
-        "romaji": ""
-      },
-      "inf-te": {
-        "kana": "",
-        "romaji": ""
-      },
-      "inf-ta": {
-        "kana": "",
-        "romaji": ""
-      },
-      "form-masu": {
-        "kana": "",
-        "romaji": ""
-      },
-      "form-neg": {
-        "kana": "",
-        "romaji": ""
-      },
-      "form-neg-past": {
-        "kana": "",
-        "romaji": ""
       }
     }
   }
