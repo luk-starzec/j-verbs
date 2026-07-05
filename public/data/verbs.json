@@ -262,7 +262,7 @@
         "romaji": "hataraite"
       },
       "inf-ta": {
-        "kana": "はたらいて",
+        "kana": "はたらいた",
         "romaji": "hataraita"
       },
       "form-masu": {
@@ -486,7 +486,7 @@
       "eng": "to wash",
       "inf-kanji": "洗う",
       "inf-dict": {
-        "kana": "わしゃらう",
+        "kana": "あらう",
         "romaji": "arau"
       },
       "inf-neg": {
@@ -506,16 +506,16 @@
         "romaji": "aratta"
       },
       "form-masu": {
-        "kana": "あります",
-        "romaji": "arimasu"
+        "kana": "あらいます",
+        "romaji": "araimasu"
       },
       "form-neg": {
-        "kana": "ありません",
-        "romaji": "arimasen"
+        "kana": "あらいません",
+        "romaji": "araimasen"
       },
       "form-neg-past": {
-        "kana": "あらませんでした",
-        "romaji": "aramasendeshita"
+        "kana": "あらいませんでした",
+        "romaji": "araimasendeshita"
       }
     }
   },
@@ -650,12 +650,12 @@
         "romaji": "shinu"
       },
       "inf-neg": {
-        "kana": "しない",
-        "romaji": "shinai"
+        "kana": "しなない",
+        "romaji": "shinanai"
       },
       "inf-neg-past": {
-        "kana": "しなかった",
-        "romaji": "shinakatta"
+        "kana": "しななかった",
+        "romaji": "shinanakatta"
       },
       "inf-te": {
         "kana": "しんで",
@@ -706,16 +706,16 @@
         "romaji": "haitta"
       },
       "form-masu": {
-        "kana": "はいます",
-        "romaji": "haimasu"
+        "kana": "はいります",
+        "romaji": "hairimasu"
       },
       "form-neg": {
-        "kana": "はいません",
-        "romaji": "haimasen"
+        "kana": "はいりません",
+        "romaji": "hairimasen"
       },
       "form-neg-past": {
-        "kana": "はいませんでした",
-        "romaji": "haimasendeshita"
+        "kana": "はいりませんでした",
+        "romaji": "hairimasendeshita"
       }
     }
   },
